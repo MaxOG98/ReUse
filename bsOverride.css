@@ -125,7 +125,7 @@ body {
     height: 50px;
 }
 
-.btn-info {
+.btn-yellow {
     --bs-btn-color: var(--bs-yellow);
     --bs-btn-bg: 0;
     --bs-btn-border-color: var(--bs-yellow);
