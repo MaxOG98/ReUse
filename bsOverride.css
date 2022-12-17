@@ -55,6 +55,18 @@ body {
     line-height: 38px;
 }
 
+/*style for the footer*/
+.custom-footer a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 5.6vw;
+    color: var(--bs-text-light);
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
 /*----------------- Colors ------------------*/
 
 :root {
@@ -99,7 +111,7 @@ body {
     --bs-btn-border-width: 4px;
     --bs-btn-border-radius: 30px;
     --bs-btn-box-shadow: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.25));
-    }
+}
 
 .btn-primary {
     --bs-btn-color: var(--bs-secondary);
@@ -135,6 +147,15 @@ body {
     --bs-btn-focus-shadow-rgb: 49, 132, 253;
     width: 160px;
     height: 50px;
+}
+
+.custom-footer {
+    background-color: var(--bs-secondary);
+    padding: 8vw 0;
+}
+
+.footer-icons {
+    padding-bottom: 40px;
 }
 
 /*---------------------------- ------------- ---------------------------------------------------------------------------------------------*/
@@ -190,13 +211,13 @@ body {
 
     .btn {
         --bs-btn-font-size: 21px;
-        }
-    
+    }
+
     .btn-primary {
         width: 184px;
         height: 60px;
     }
-    
+
     .btn-secondary {
         width: 184px;
         height: 60px;

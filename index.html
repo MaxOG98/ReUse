@@ -15,40 +15,76 @@
 <body>
     <!--Navbar-->
     <nav class="navbar navbar-expand-md">
-        <div class="container-fluid px-4 px-md-5">
-            <div class="m-md-auto" id="logo">
-                <a class="navbar-brand" href="index.html"><img src="imgs/Logo/LogoMobile.svg"></a>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">Mission</a>
-                    <a class="nav-link" href="#">Su di noi</a>
-                    <a class="nav-link" href="#">App</a>
-                    <a class="nav-link" href="#">Eventi</a>
-                    <a class="nav-link" href="#">Community</a>
+        <div class="container-fluid ">
+            <div class="container d-flex justify-content-between">
+                <div class="m-md-auto" id="logo">
+                    <a class="navbar-brand" href="index.html"><img src="imgs/Logo/LogoMobile.svg"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#">Mission</a>
+                        <a class="nav-link" href="#">Su di noi</a>
+                        <a class="nav-link" href="#">App</a>
+                        <a class="nav-link" href="#">Eventi</a>
+                        <a class="nav-link" href="#">Community</a>
+                    </div>
                 </div>
             </div>
-
         </div>
     </nav>
     <!--Header-->
-    <div class="headerRe">
-        <div class="title px-4 px-md-5">
+    <div class="headerRe container-fluid">
+        <div class="title container">
             <h1>ReUse</h1>
-            <p class="subtitle">Non lo usi?<br>Qualcun’altro lo farà</p>
+            <p class="subtitle">Non lo usi?<br>Qualcun'altro lo farà</p>
         </div>
     </div>
     <!--Body-->
     <div class="bg-red bodyio">
-        <button type="button" class="btn btn-primary">Primary</button>
-        <button type="button" class="btn btn-secondary">Secondary</button>
-        <button type="button" class="btn btn-yellow">Info</button>
+        <div class="container">
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-yellow">Info</button>
+        </div>
     </div>
+    <footer>
+        <div class="container-fluid custom-footer">
+            <div class="container d-flex justify-content-between">
+                <div class="footer-left d-none d-md-flex flex-md-column">
+                    <a href="#">Termini e condizioni</a>
+                    <a href="#">Informativa sulla privacy</a>
+                    <a href="#">Informativa relativa ai cookie</a>
+                </div>
+                <div class="footer-right d-flex flex-column m-auto m-md-0">
+                    <div class="footer-icons m-auto">
+                        <!--Forse è solo una icona-->
+                        <img src="imgs/Logo/IconsMob/TelegramMob.svg">
+                        <img src="imgs/Logo/IconsMob/InstagramMob.svg">
+                        <img src="imgs/Logo/IconsMob/FacebookMob.svg">
+                        <!--<picture>
+                            <source media="(min-width:768px)" srcset="imgs/Logo/IconsDes/TelegramDes.svg">
+                            <img src="imgs/Logo/IconsMob/TelegramMob.svg" alt="Telegram Icon" style="width: auto;">
+                        </picture>
+                        <picture>
+                            <source media="(min-width:768px)" srcset="imgs/Logo/IconsDes/InstagramDes.svg">
+                            <img src="imgs/Logo/IconsMob/InstagramMob.svg" alt="Telegram Icon" style="width: auto;">
+                        </picture>
+                        <picture>
+                            <source media="(min-width:768px)" srcset="imgs/Logo/IconsDes/FacebookDes.svg">
+                            <img src="imgs/Logo/IconsMob/FacebookMob.svg" alt="Telegram Icon" style="width: auto;">
+                        </picture>-->
+                    </div>
+                    <button class="btn btn-yellow m-auto">Scarica l'app</button>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
