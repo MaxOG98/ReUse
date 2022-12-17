@@ -1,0 +1,67 @@
+/*----------------- Navbar ------------------*/
+
+.navbar-nav {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: #F9F5F4;
+}
+
+.navbar-toggler {
+    border: none;
+    width: 10vw;
+    padding: 0;
+}
+
+#logo {
+    margin-right: 2rem !important;
+}
+
+#navbar-row {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navbar-toggler-icon {
+    background-image: url("imgs/Icons/hamburgerMenu.svg");
+}
+
+/*----------------- Header ------------------*/
+
+.headerRe {
+    background-image: url("imgs/HomePage/HeaderHomeMobile.png");
+    background-size: contain;
+    height: 89vw;
+}
+
+.title {
+    position: relative;
+    top: 26.6vw;
+}
+
+.bodyio {
+    height: 60vw;
+}
+
+/*---------------------------- ------------- ---------------------------------------------------------------------------------------------*/
+/*---------------------------- Breakpoint-md ---------------------------------------------------------------------------------------------*/
+/*---------------------------- ------------- ---------------------------------------------------------------------------------------------*/
+
+@media (min-width: 768px) {
+    
+    .headerRe {
+        background-image: url("imgs/HomePage/HeaderHomeDesktop.png");
+        background-size: contain;
+        height: 64.5vw;
+    }
+
+    .title {
+        position: relative;
+        width: 55%;
+        left: 45vw;
+        top: 17.5vw;
+    }
+
+}

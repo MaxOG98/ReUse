@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&family=Poppins:wght@400;700&family=Russo+One&display=swap');
+
+/*----------------- Typography Mobile ------------------*/
+
+h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10.76vw;
+    line-height: 16.4vw;
+    color: var(--bs-text-light);
+}
+
+h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8.76vw;
+    line-height: 13.07vw;
+    color: var(--bs-text-light);
+}
+
+h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6.6vw;
+    line-height: 10vw;
+}
+
+.subtitle {
+    /*h3 serif*/
+    font-family: 'Libre Bodoni';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6.6vw;
+    line-height: 8.2vw;
+    color: var(--bs-yellow);
+}
+
+body {
+    font-family: 'Libre Bodoni';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.6vw;
+    line-height: 5.6vw;
+}
+
+.navbar {
+    background-color: #004643;
+    font-family: 'Libre Bodoni';
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 2vw;
+    line-height: 38px;
+}
+
+/*----------------- Colors ------------------*/
+
+:root {
+    --bs-primary: #C4DCC6;
+    /*Acquamarina*/
+    --bs-primary-rgb: 196, 220, 198;
+    /*Acquamarina RGB*/
+    --bs-secondary: #004643;
+    /*Hard Green*/
+    --bs-secondary-rgb: 0, 70, 67;
+    /*Hard Green RGB*/
+    --bs-yellow: #F8D03C;
+    /*Sunny Yellow*/
+    --bs-red: #E22E20;
+    /*Light Red*/
+    --bs-body-bg: var(--bs-primary);
+    /*Body background color*/
+    --bs-bg-primary: var(--bs-primary-rgb);
+    /*Primary background color*/
+    --bs-bg-secondary: var(--bs-secondary-rgb);
+    /*Secondary background color*/
+    --bs-text-dark: #2E2E2E;
+    --bs-text-light: #F9F5F4;
+}
+
+.bg-red {
+    background-color: var(--bs-red);
+}
+
+.bg-yellow {
+    background-color: var(--bs-yellow);
+}
+
+/*------------ Buttons -------------*/
+
+.btn {
+    --bs-btn-font-family: 'Poppins';
+    --bs-btn-font-size: 18px;
+    --bs-btn-font-weight: 700;
+    --bs-btn-line-height: 1.5;
+    --bs-btn-color: #212529;
+    --bs-btn-border-width: 4px;
+    --bs-btn-border-radius: 30px;
+    --bs-btn-box-shadow: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.25));
+    }
+
+.btn-primary {
+    --bs-btn-color: var(--bs-secondary);
+    --bs-btn-bg: 0;
+    --bs-btn-border-color: var(--bs-secondary);
+    --bs-btn-hover-color: var(--bs-text-light);
+    --bs-btn-hover-bg: var(--bs-secondary);
+    --bs-btn-hover-border-color: var(--bs-secondary);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    width: 160px;
+    height: 50px;
+}
+
+.btn-secondary {
+    --bs-btn-color: #F9F5F4;
+    --bs-btn-bg: 0;
+    --bs-btn-border-color: #F9F5F4;
+    --bs-btn-hover-color: var(--bs-secondary);
+    --bs-btn-hover-bg: #F9F5F4;
+    --bs-btn-hover-border-color: #F9F5F4;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    width: 160px;
+    height: 50px;
+}
+
+.btn-info {
+    --bs-btn-color: var(--bs-yellow);
+    --bs-btn-bg: 0;
+    --bs-btn-border-color: var(--bs-yellow);
+    --bs-btn-hover-color: var(--bs-secondary);
+    --bs-btn-hover-bg: var(--bs-yellow);
+    --bs-btn-hover-border-color: var(--bs-yellow);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    width: 160px;
+    height: 50px;
+}
+
+/*---------------------------- ------------- ---------------------------------------------------------------------------------------------*/
+/*---------------------------- Breakpoint-md ---------------------------------------------------------------------------------------------*/
+/*---------------------------- ------------- ---------------------------------------------------------------------------------------------*/
+
+@media (min-width: 768px) {
+
+    /*----------------- Typography Desktop ------------------*/
+    h1 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 6.1vw;
+        line-height: 9.2vw;
+        color: var(--bs-text-light);
+    }
+
+    h2 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3.8vw;
+        line-height: 5.6vw;
+    }
+
+    .subtitle {
+        /*h2 serif*/
+        font-family: 'Libre Bodoni';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3.8vw;
+        line-height: 4.7vw;
+        color: var(--bs-yellow);
+    }
+
+    h3 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.3vw;
+        line-height: 3.5vw;
+    }
+
+    body {
+        font-family: 'Libre Bodoni';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5vw;
+        line-height: 2vw;
+        /*letter-spacing: ?*/
+    }
+
+    .btn {
+        --bs-btn-font-size: 21px;
+        }
+    
+    .btn-primary {
+        width: 184px;
+        height: 60px;
+    }
+    
+    .btn-secondary {
+        width: 184px;
+        height: 60px;
+    }
+
+    .btn-info {
+        width: 184px;
+        height: 60px;
+    }
+}
