@@ -41,8 +41,12 @@
     top: 26.6vw;
 }
 
-.bodyio {
-    height: 60vw;
+.mission-homepage {
+    padding-top: 13vw;
+} 
+
+.numGroups-homepage div{
+    width: 17vw;
 }
 
 .custom-footer img {
@@ -67,5 +71,7 @@
         left: 23vw;
         top: 17.5vw;
     }
-
+    .mission-homepage {
+        padding-top: 6vw;
+    }
 }

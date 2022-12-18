@@ -17,7 +17,7 @@ h2 {
     font-weight: 700;
     font-size: 8.76vw;
     line-height: 13.07vw;
-    color: var(--bs-text-light);
+    color: var(--bs-secondary);
 }
 
 h3 {
