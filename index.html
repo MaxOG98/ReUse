@@ -50,44 +50,119 @@
     <main>
         <!--Main section-->
         <div class="container-fluid">
-            <div class="container">
-                <div class="mission-homepage d-flex">
-                    <div class="d-flex flex-column">
+            <div class="container mission-homepage">
+                <div class="d-flex flex-column">
+                    <h2 class="d-none d-md-block text-center text-md-start">Mission</h2>
+                    <div class="row d-md-none gy-4">
                         <h2 class="text-center">Mission</h2>
-                        <img class="d-md-none" src="imgs/HomePage/BaseballMobile.png">
-                        <p class="d-md-none">La nostra mission vede il riciclo e la lotta allo spreco come uno stile di vita,
-                            dove il vantaggio
-                            tra donatori e riceventi è più che reciproco: prendetela e usatela tutti, gli oggetti avranno così
-                            una seconda vita. </p>
-                        <p class="d-none d-md-block">Il maglione regalato dalla nonna, ancora col cartellino nell'armadio. Il
-                            libro iniziato a leggere nel
-                            2015 che prende polvere sul comodino. E così tantissimi altri oggetti rimangono inutilizzati, frutto
-                            di una società dove il consumo va ben oltre ogni reale necessità. </p>
-                        <p class="d-none d-md-block">Per fortuna c'è Reuse, la nuovissima piattaforma di scambio gratuito di oggetti second-hand.
-                            Il maglione della nonna non è poi così male, e ci sarà sicuramente qualcuno che lo apprezzerà
-                            (ingrato).</p>
-                        <p class="d-none d-md-block">La nostra mission vede il riciclo e la lotta allo spreco come uno stile di vita, dove il vantaggio
-                            tra donatori e riceventi è più che reciproco: prendetela e usatela tutti, gli oggetti avranno così
-                            una seconda vita. </p>
+                        <img src="imgs/HomePage/BaseballMobile.png" alt="Baseball player hitting coloured disks">
+                        <p>La nostra mission vede il riciclo e la lotta allo spreco come uno stile di
+                            vita, dove il vantaggio tra donatori e riceventi è più che reciproco: prendetela e usatela
+                            tutti, gli oggetti
+                            avranno così una seconda vita. </p>
+                        <a href="#" class="d-flex d-md-none">
+                            <button type="button" class="btn btn-primary mx-auto">Scopri di più</button>
+                        </a>
                     </div>
-                    <img class="d-none d-md-block" src="imgs/HomePage/BaseballDesktop.png">
+                    <div class="row d-none d-md-flex justify-content-between">
+                        <div class="col-md-6">
+                            <p>Il maglione regalato dalla nonna, ancora col cartellino
+                                nell'armadio. Il libro iniziato a leggere nel 2015 che prende polvere sul comodino. E
+                                così
+                                tantissimi altri oggetti rimangono
+                                inutilizzati, frutto di una società dove il consumo va ben oltre ogni reale necessità.
+                            </p>
+                            <p>Per fortuna c'è Reuse, la nuovissima piattaforma di scambio
+                                gratuito di oggetti second-hand. Il maglione della nonna non è poi così male, e ci sarà
+                                sicuramente qualcuno che lo
+                                apprezzerà (ingrato).</p>
+                            <p>La nostra mission vede il riciclo e la lotta allo spreco come uno
+                                stile di vita, dove il vantaggio tra donatori e riceventi è più che reciproco:
+                                prendetela e
+                                usatela tutti, gli oggetti
+                                avranno così una seconda vita. </p>
+                        </div>
+                        <img class="d-none d-md-block col-md-6" src="imgs/HomePage/BaseballDesktop.png"
+                            style="aspect-ratio: auto; max-width: 30vw;" alt="Baseball player hitting coloured disks">
+                    </div>
                 </div>
-                
+
                 <div class="numGroups-homepage d-none d-md-flex justify-content-between">
-                    <div>
-                        <img src="imgs/HomePage/Group1Desktop.png">
-                        <p class="text-align-center">Ricicla gli oggetti che non usi più! Qualcun altro lo troverà utile.</p>
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="imgs/HomePage/Group1Desktop.png" style="max-width: 12vw;">
+                        <p class="text-center">Ricicla gli oggetti che non usi più! Qualcun altro lo troverà utile.</p>
                     </div>
-                    <div>
-                        <img src="imgs/HomePage/Group2Desktop.png">
-                        <p class="text-align-center">Libera spazio in casa, ti libererà anche la mente, altro che yoga!</p>
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="imgs/HomePage/Group2Desktop.png" style="max-width: 12vw;">
+                        <p class="text-center">Libera spazio in casa, ti libererà anche la mente, altro che yoga!</p>
                     </div>
-                    <div>
-                        <img src="imgs/HomePage/Group3Desktop.png">
-                        <p class="text-align-center">Risparmia! Ricevi in dono oggetti che per altri non valgono più nulla</p>
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="imgs/HomePage/Group3Desktop.png" style="max-width: 12vw;">
+                        <p class="text-center">Risparmia! Ricevi in dono oggetti che per altri non valgono più nulla</p>
                     </div>
                 </div>
-                <button type="button" class="btn btn-secondary d-flex m-auto">Scopri di più</button>
+                <div class="d-none d-md-flex">
+                    <button type="button" class="btn btn-primary m-auto">Scopri di più</button>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="container-fluid bg-secondary">
+            <div class="container app-homepage">
+                <div class="d-flex flex-column ">
+                    <h2 class="d-none d-md-block text-center text-md-start ">Mission</h2>
+                    <div class="row d-md-none gy-4">
+                        <h2 class="text-center text-light">L'app</h2>
+                        <img src="imgs/HomePage/AppMobile.png" alt="Mockup of the ReUse app">
+                        <p class="text-light">Scarica l'App e inizia subito a donare o ricevere aggeggi di ogni tipo.
+                            Ti sorprenderai di cosa puoi trovare all'interno di ReUse!
+                            Tutti possono donare, persino le aziende. Bello vero? </p>
+                        <a href="#" class="d-flex d-md-none">
+                            <button type="button" class="btn btn-secondary mx-auto">Vai all'app</button>
+                        </a>
+                    </div>
+                    <div class="row d-none d-md-flex justify-content-between">
+                        <div class="col-md-6">
+                            <p>Il maglione regalato dalla nonna, ancora col cartellino
+                                nell'armadio. Il libro iniziato a leggere nel 2015 che prende polvere sul comodino. E
+                                così
+                                tantissimi altri oggetti rimangono
+                                inutilizzati, frutto di una società dove il consumo va ben oltre ogni reale necessità.
+                            </p>
+                            <p>Per fortuna c'è Reuse, la nuovissima piattaforma di scambio
+                                gratuito di oggetti second-hand. Il maglione della nonna non è poi così male, e ci sarà
+                                sicuramente qualcuno che lo
+                                apprezzerà (ingrato).</p>
+                            <p>La nostra mission vede il riciclo e la lotta allo spreco come uno
+                                stile di vita, dove il vantaggio tra donatori e riceventi è più che reciproco:
+                                prendetela e
+                                usatela tutti, gli oggetti
+                                avranno così una seconda vita. </p>
+                        </div>
+                        <img class="d-none d-md-block col-md-6" src="imgs/HomePage/BaseballDesktop.png"
+                            style="aspect-ratio: auto; max-width: 30vw;" alt="Baseball player hitting coloured disks">
+                    </div>
+                </div>
+
+                <div class="numGroups-homepage d-none d-md-flex justify-content-between">
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="imgs/HomePage/Group1Desktop.png" style="max-width: 12vw;">
+                        <p class="text-center">Ricicla gli oggetti che non usi più! Qualcun altro lo troverà utile.</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="imgs/HomePage/Group2Desktop.png" style="max-width: 12vw;">
+                        <p class="text-center">Libera spazio in casa, ti libererà anche la mente, altro che yoga!</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="imgs/HomePage/Group3Desktop.png" style="max-width: 12vw;">
+                        <p class="text-center">Risparmia! Ricevi in dono oggetti che per altri non valgono più nulla</p>
+                    </div>
+                </div>
+                <div class="d-none d-md-flex">
+                    <button type="button" class="btn btn-secondary m-auto">Scopri di più</button>
+                </div>
+
             </div>
         </div>
     </main>
@@ -105,18 +180,6 @@
                         <img src="imgs/Logo/IconsMob/TelegramMob.svg">
                         <img src="imgs/Logo/IconsMob/InstagramMob.svg">
                         <img src="imgs/Logo/IconsMob/FacebookMob.svg">
-                        <!--<picture>
-                            <source media="(min-width:768px)" srcset="imgs/Logo/IconsDes/TelegramDes.svg">
-                            <img src="imgs/Logo/IconsMob/TelegramMob.svg" alt="Telegram Icon" style="width: auto;">
-                        </picture>
-                        <picture>
-                            <source media="(min-width:768px)" srcset="imgs/Logo/IconsDes/InstagramDes.svg">
-                            <img src="imgs/Logo/IconsMob/InstagramMob.svg" alt="Telegram Icon" style="width: auto;">
-                        </picture>
-                        <picture>
-                            <source media="(min-width:768px)" srcset="imgs/Logo/IconsDes/FacebookDes.svg">
-                            <img src="imgs/Logo/IconsMob/FacebookMob.svg" alt="Telegram Icon" style="width: auto;">
-                        </picture>-->
                     </div>
                     <button type="button" class="btn btn-yellow m-auto">Scarica l'app</button>
                 </div>

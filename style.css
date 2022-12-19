@@ -42,11 +42,16 @@
 }
 
 .mission-homepage {
-    padding-top: 13vw;
+    /*esprimibile con classe mt*/
+    margin: 20vw auto;
 } 
 
-.numGroups-homepage div{
-    width: 17vw;
+.mission-homepage>div {
+    margin: 3vw 0;
+}
+
+.app-homepage {
+    padding: 20vw 1.5rem;
 }
 
 .custom-footer img {
@@ -62,16 +67,28 @@
     .headerRe {
         background-image: url("imgs/HomePage/HeaderHomeDesktop.png");
         background-size: contain;
-        height: 64.5vw;
+        height: 64vw;
     }
 
     .title {
         position: relative;
         width: 55%;
-        left: 23vw;
+        left: 22vw;
         top: 17.5vw;
     }
     .mission-homepage {
-        padding-top: 6vw;
+        margin: 7vw auto;
+    }
+
+    .mission-homepage>div {
+        margin: 3vw 0;
+    }
+
+    .numGroups-homepage {
+        margin: 7vw 0!important;
+    }
+
+    .numGroups-homepage div{
+        width: 17vw;
     }
 }
