@@ -33,7 +33,7 @@
 .headerRe {
     background-image: url("imgs/HomePage/HeaderHomeMobile.png");
     background-size: contain;
-    height: 89vw;
+    height: 87vw;
 }
 
 .title {
@@ -90,5 +90,9 @@
 
     .numGroups-homepage div{
         width: 17vw;
+    }
+
+    .app-homepage {
+        padding: 7vw 1.5rem;
     }
 }
