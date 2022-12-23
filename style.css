@@ -41,7 +41,17 @@
     top: 26.6vw;
 }
 
-.mission-homepage {
+/*----------------- Button back to top ------------------*/
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+/*----------------- Main section ------------------*/
+
+.mission-homepage, .sponsor-homepage {
     /*esprimibile con classe mt*/
     margin: 20vw auto;
 } 
@@ -67,6 +77,7 @@
     .headerRe {
         background-image: url("imgs/HomePage/HeaderHomeDesktop.png");
         background-size: contain;
+        /*ho specificato l'altezza perché altrimenti il background si ripete*/
         height: 64vw;
     }
 
@@ -76,7 +87,7 @@
         left: 22vw;
         top: 17.5vw;
     }
-    .mission-homepage {
+    .mission-homepage, .sponsor-homepage {
         margin: 7vw auto;
     }
 

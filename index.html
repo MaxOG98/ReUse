@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="bsOverride.css" type="text/css" rel="stylesheet">
     <link href="style.css" type="text/css" rel="stylesheet">
     <title>Homepage</title>
@@ -38,7 +41,7 @@
             </div>
         </div>
     </nav>
-     <!--Header-->
+    <!--Header-->
     <header>
         <div class="headerRe container-fluid">
             <div class="title container">
@@ -133,42 +136,52 @@
                                 <button type="button" class="btn btn-secondary">Vai all'app</button>
                             </a>
                         </div>
-                        <img class="col-md-6" src="imgs/HomePage/AppDesktop800.png" alt="Mockup of the ReUse app" style="aspect-ratio: auto;">
+                        <img class="col-md-6" src="imgs/HomePage/AppDesktop800.png" alt="Mockup of the ReUse app"
+                            style="aspect-ratio: auto;">
                     </div>
                 </div>
             </div>
         </div>
         <!--Sponsor section-->
         <div class="container-fluid">
-            <div class="container aziende-homepage">
+            <div class="container sponsor-homepage">
                 <div class="d-flex flex-column">
-                    <div class="row d-md-none gy-4">
-                        <h2 class="text-center text-light">L'app</h2>
-                        <img src="imgs/HomePage/AppMobile.png" alt="Mockup of the ReUse app">
-                        <p class="text-light">Scarica l'App e inizia subito a donare o ricevere aggeggi di ogni tipo.
-                            Ti sorprenderai di cosa puoi trovare all'interno di ReUse!
-                            Tutti possono donare, persino le aziende. Bello vero? </p>
-                        <a href="#" class="d-flex d-md-none">
-                            <button type="button" class="btn btn-secondary mx-auto">Vai all'app</button>
+                    <div class="row gy-4">
+                        <h2 class="text-center">Aziende partner</h2>
+                        <p class="text-md-center">Nella lotta allo spreco come stile di vita, non siamo proprio
+                            gli unici!<br>
+                            Se ci credono loro, perchè non dovresti crederci tu?</p>
+                        <div class="d-md-none">
+                            <div class="row gy-4">
+                                <img class="col-6" src="imgs/HomePage/TimberlandLogoMob.svg" alt="Logo Timberland">
+                                <img class="col-6" src="imgs/HomePage/PatagoniaLogoMob.svg" alt="Logo Patagonia">
+                                <img class="col-6" src="imgs/HomePage/RainsLogoMob.svg" alt="Logo Rains">
+                                <img class="col-6" src="imgs/HomePage/NanushkaLogoMob.svg" alt="Logo Nanushka">
+                            </div>
+                        </div>
+                        <div class="tv-homepage d-none d-md-flex justify-content-between">
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="imgs/HomePage/RainTV.png" style="max-width: 19vw;">
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="imgs/HomePage/PatagoniaTV.png" style="max-width: 19vw;">
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="imgs/HomePage/NanushkaTV.png" style="max-width: 19vw;">
+                            </div>
+                        </div>
+                        <a href="#" class="d-flex">
+                            <button type="button" class="btn btn-primary mx-auto">Visualizza</button>
                         </a>
                     </div>
-                    <div class="row d-none d-md-flex justify-content-between">
-                        <div class="col-md-4 row gy-4">
-                            <h2 class="text-light">L'app</h2>
-                            <p class="text-light">Scarica l'App e inizia subito a donare o ricevere aggeggi di ogni
-                                tipo.
-                                Ti sorprenderai di cosa puoi trovare all'interno di ReUse!
-                                Tutti possono donare, persino le aziende. Bello vero? </p>
-                            <a href="#" class="d-none d-md-flex">
-                                <button type="button" class="btn btn-secondary">Vai all'app</button>
-                            </a>
-                        </div>
-                        <!--Casino con sta immagine da risolvere-->
-                        <img class="col-md-6" src="imgs/HomePage/AppDesktop800.png" alt="Mockup of the ReUse app">
-                    </div>
+
                 </div>
             </div>
         </div>
+        </div>
+        <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
     </main>
     <footer>
         <div class="container-fluid custom-footer">
@@ -190,6 +203,7 @@
             </div>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>
