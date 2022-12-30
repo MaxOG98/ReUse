@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="bsOverride.css" type="text/css" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <title>App</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid ">
+            <div class="container d-flex justify-content-between">
+                <div class="m-md-auto" id="logo">
+                    <a class="navbar-brand" href="index.html"><img src="imgs/Logo/LogoMobile.svg"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="#">Mission</a>
+                        <a class="nav-link" href="#">Su di noi</a>
+                        <a class="nav-link" aria-current="page" href="app.html">App</a>
+                        <a class="nav-link" href="#">Eventi</a>
+                        <a class="nav-link" href="#">Community</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--Header desktop-->
+    <header>
+        <div class="headerApp container-fluid">
+            <div class="container">
+                <div class="titleApp d-flex flex-column text-md-center">
+                    <div>
+                        <h1>La nostra app</h1>
+                    </div>
+                    <div class="d-none d-md-block mt-4">
+                        <button type="button" onclick="location.href='/*link alla pagina html*/'"
+                            class="btn btn-secondary mx-sm-2 mx-3">Per privati</button>
+                        <button type="button" onclick="location.href='/*link alla pagina html*/'"
+                            class="btn btn-secondary mx-sm-2 mx-3">Per aziende</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <!--Ci piace section-->
+        <div class="container-fluid">
+            <div class="container ciPiace-App">
+                <div class="d-flex flex-column">
+                    <div class="row gy-4">
+                        <div class="d-flex justify-content-between d-md-none AppSmallScreen">
+                            <div class="">
+                                <button type="button" onclick="location.href='/*link alla pagina html*/'"
+                                    class="btn btn-primary">Per privati</button>
+                            </div>
+                            <div class="">
+                                <button type="button" onclick="location.href='/*link alla pagina html*/'"
+                                    class="btn btn-primary">Per aziende</button>
+                            </div>
+                        </div>
+                        <h2 class="d-md-block text-center">ReUse ci piace</h2>
+                        <div class="d-flex flex-column text-md-center justify-content-center">
+                            <p>L'applicazione è stata partorita con molte difficoltà, dopo un travaglio lungo lungo.
+                                Oggi permette alle persone di regalare o ricevere oggetti, e alle aziende di donare
+                                oggetti che non possono essere venduti. Un bel bambino dopo tutto!
+                            </p>
+                            <img class="d-md-none" srcset="imgs/App/AppImgMobile.png" alt="Mani che donano" />
+                            <img class="d-none d-md-block mx-auto" srcset="imgs/App/AppImgDesktop.png"
+                                alt="Mani che donano" style="width: 50vw;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Privati section-->
+        <div class="container-fluid borderTopApp"></div>
+        <div class="container-fluid bg-secondary">
+            <div class="container app-privati">
+                <div class="d-flex flex-column">
+                    <div class="row d-md-none gy-4 justify-content-center">
+                        <h2 class="text-center" style="color: var(--bs-yellow)">Privati</h2>
+                        <img src="imgs/App/PrivatiPhoneMob.png" alt="Mockup App Per privati" style="width: 75vw;">
+                        <h3 class="text-light text-center">Non ne puoi più di alzarti la mattina con gli scatoloni di
+                            roba che ti chiedono pietà?
+                        </h3>
+                        <p class="text-light">Non sarà più necessario fare i salti mortali per trovare qualcuno a cui
+                            regalare gli oggetti che non sono più di tuo interesse.
+                            Accedendo alla sezione donatori dell’app potrai caricare immagini e descrizioni degli
+                            oggetti che non usi più.
+                            Quando uno dei nostri utenti si mostrerà interessato a un tuo articolo, potrai contattarlo
+                            facilmente con l’apposita chat.</p>
+                    </div>
+                    <div class="row d-none d-md-flex justify-content-between">
+                        <img class="col-md-4" src="imgs/App/PrivatiPhone.png" alt="Mockup App Per privati">
+                        <div class="col-md-6 row gy-4">
+                            <div class="d-flex align-items-end">
+                                <h2 style="color: var(--bs-yellow)">Privati</h2>
+                                <img class="mx-4" src="imgs/App/MiniaturePrivati.png">
+                            </div>
+                            <h3 class="text-light">Non ne puoi più di alzarti la mattina con gli scatoloni di
+                                roba che ti chiedono pietà?
+                            </h3>
+                            <p class="text-light">Non sarà più necessario fare i salti mortali per trovare qualcuno a
+                                cui regalare gli oggetti che non sono più di tuo interesse.
+                                Accedendo alla sezione donatori dell’app potrai caricare immagini e descrizioni degli
+                                oggetti che non usi più.
+                                Quando uno dei nostri utenti si mostrerà interessato a un tuo articolo, potrai
+                                contattarlo facilmente con l’apposita chat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid borderBottomApp"></div>
+        <!--Aziende section-->
+        <div class="container-fluid bg-yellow">
+            <div class="container app-aziende">
+                <div class="d-flex flex-column">
+                    <div class="row d-md-none gy-4 justify-content-center">
+                        <h2 class="text-center">Aziende</h2>
+                        <img src="imgs/App/AziendePhoneMob.png" alt="Mockup app per aziende" style="width: 75vw;">
+                        <h3 class="text-dark text-center">Se sei un'azienda, dovresti adottare un modello di business
+                            responsabile, punto.
+                        </h3>
+                        <p class="text-dark"> Per combattere la crisi climatica, dovresti essere tu a guidare questa
+                            lotta, adottando pratiche più sostenibili.
+                            Potrai caricare velocemente il non venduto sulla piattaforma, e le persone potranno
+                            facilmente ritirarlo in sede.
+                            Con pochi click, aiuterai il prossimo, diminuirai lo spreco e favorirai il riciclo. </p>
+                    </div>
+                    <div class="row d-none d-md-flex justify-content-between">
+
+                        <div class="col-md-6 row gy-4">
+                            <div class="d-flex align-items-end">
+                                <h2>Aziende</h2>
+                                <img class="mx-4" src="imgs/App/MiniatureAziende.png">
+                            </div>
+                            <h3 class="text-dark">Non ne puoi più di alzarti la mattina con gli scatoloni di
+                                roba che ti chiedono pietà?
+                            </h3>
+                            <p class="text-dark">Si, soprattutto con le aziende di grandi dimensioni, vogliamo essere
+                                un po’ bacchettoni. Per combattere la crisi climatica, dovresti essere tu a guidare
+                                questa lotta, adottando pratiche più sostenibili.
+                                Non sai come fare? Non preoccuparti, ReUse fa al caso tuo.
+                                Potrai caricare velocemente il non venduto sulla piattaforma, e le persone potranno
+                                facilmente ritirarlo in sede.
+                                Con pochi click, aiuterai il prossimo, diminuirai lo spreco e favorirai il riciclo. </p>
+                        </div>
+                        <img class="col-md-4" src="imgs/App/AziendePhone.png" alt="Mockup app per aziende">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Bottone Back to top da rivedere-->
+        <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </main>
+    <footer>
+        <div class="container-fluid custom-footer">
+            <div class="container d-flex justify-content-between">
+                <div class="footer-left d-none d-md-flex flex-md-column">
+                    <a href="#">Termini e condizioni</a>
+                    <a href="#">Informativa sulla privacy</a>
+                    <a href="#">Informativa relativa ai cookie</a>
+                </div>
+                <div class="footer-right d-flex flex-column m-auto m-md-0">
+                    <div class="footer-icons m-auto">
+                        <!--Forse è solo una icona-->
+                        <img src="imgs/Logo/IconsMob/TelegramMob.svg">
+                        <img src="imgs/Logo/IconsMob/InstagramMob.svg">
+                        <img src="imgs/Logo/IconsMob/FacebookMob.svg">
+                    </div>
+                    <button type="button" class="btn btn-yellow m-auto">Scarica l'app</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

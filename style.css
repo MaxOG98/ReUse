@@ -28,12 +28,14 @@
     background-image: url("imgs/Icons/hamburgerMenu.svg");
 }
 
+/*----------------- HOME ------------------*/
+
 /*----------------- Header ------------------*/
 
 .headerRe {
     background-image: url("imgs/HomePage/HeaderHomeMobile.png");
     background-size: contain;
-    height: 87vw;
+    height: 86.8vw;
 }
 
 .title {
@@ -51,16 +53,18 @@
 
 /*----------------- Main section ------------------*/
 
-.mission-homepage, .sponsor-homepage {
+.mission-homepage,
+.sponsor-homepage, 
+.ciPiace-App {
     /*esprimibile con classe mt*/
     margin: 20vw auto;
-} 
+}
 
 .mission-homepage>div {
     margin: 3vw 0;
 }
 
-.app-homepage {
+.app-homepage, .app-privati, .app-aziende {
     padding: 20vw 1.5rem;
 }
 
@@ -68,17 +72,53 @@
     padding: 0.8vw;
 }
 
+/*----------------- APP ------------------*/
+/*----------------- Header ------------------*/
+.headerApp {
+    background-image: url("imgs/App/HeaderAppMobile.png");
+    background-size: contain;
+    height: 89.7vw;
+}
+
+.titleApp {
+    position: relative;
+    top: 3vw;
+    width: 70%;
+}
+
+/*----------------- Main ------------------*/
+.borderTopApp {
+    background-image: url(imgs/App/BorderTopMob.png);
+    height: 20vw;
+    background-size: cover;
+}
+
+.borderBottomApp {
+    background-image: url(imgs/App/BorderBottomMobpng.png);
+    height: 27vw;
+    background-size: cover;
+}
+
+.bg-privati {
+    background-image: url(imgs/App/backgroundAppPrivatiMobile.png);
+    background-size: cover;
+}
+
+
+
 /*---------------------------- ------------- ---------------------------------------------------------------------------------------------*/
 /*---------------------------- Breakpoint-md ---------------------------------------------------------------------------------------------*/
 /*---------------------------- ------------- ---------------------------------------------------------------------------------------------*/
 
 @media (min-width: 768px) {
-    
+
+    /*----------------- HOME ------------------*/
+
     .headerRe {
         background-image: url("imgs/HomePage/HeaderHomeDesktop.png");
         background-size: contain;
         /*ho specificato l'altezza perché altrimenti il background si ripete*/
-        height: 64vw;
+        height: 63.3vw;
     }
 
     .title {
@@ -87,7 +127,10 @@
         left: 22vw;
         top: 17.5vw;
     }
-    .mission-homepage, .sponsor-homepage {
+
+    .mission-homepage,
+    .sponsor-homepage,
+    .ciPiace-App {
         margin: 7vw auto;
     }
 
@@ -96,14 +139,56 @@
     }
 
     .numGroups-homepage {
-        margin: 7vw 0!important;
+        margin: 7vw 0 !important;
     }
 
-    .numGroups-homepage div{
+    .numGroups-homepage div {
         width: 17vw;
     }
 
-    .app-homepage {
+    .app-homepage, .app-privati, .app-aziende {
         padding: 7vw 1.5rem;
+    }
+
+    /*----------------- APP ------------------*/
+    /*----------------- Header ------------------*/
+
+    .headerApp {
+        background-image: url("imgs/App/HeaderAppDesktop2.png");
+        background-size: contain;
+        /*ho specificato l'altezza perché altrimenti il background si ripete*/
+        height: 61vw;
+
+    }
+
+    .titleApp {
+        position: relative;
+        width: 44vw;
+        top: 10vw
+    }
+
+    .borderTopApp {
+        background-image: url(imgs/App/GreenBorderTop.png);
+        height: 20vw;
+        background-size: cover;
+    }
+    
+    .borderBottomApp {
+        background-image: url(imgs/App/BorderBottom.png);
+        height: 27vw;
+        background-size: cover;
+    }
+}
+
+/* Purtroppo ho dovuto barare e mettere un nuovlo limite per far si che non faccia schifo la disposizione dei bottoni nell'app*/
+
+@media (max-width: 382px) {
+    .AppSmallScreen {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .AppSmallScreen div {
+        margin: 2vw 0;
     }
 }
