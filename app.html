@@ -65,7 +65,7 @@
         <div class="container-fluid">
             <div class="container ciPiace-App">
                 <div class="d-flex flex-column">
-                    <div class="row gy-4">
+                    <div class="row gy-5">
                         <div class="d-flex justify-content-between d-md-none AppSmallScreen">
                             <div class="">
                                 <button type="button" onclick="location.href='/*link alla pagina html*/'"
@@ -95,7 +95,7 @@
         <div class="container-fluid bg-secondary">
             <div class="container app-privati">
                 <div class="d-flex flex-column">
-                    <div class="row d-md-none gy-4 justify-content-center">
+                    <div class="row d-md-none gy-5 justify-content-center">
                         <h2 class="text-center" style="color: var(--bs-yellow)">Privati</h2>
                         <img src="imgs/App/PrivatiPhoneMob.png" alt="Mockup App Per privati" style="width: 75vw;">
                         <h3 class="text-light text-center">Non ne puoi più di alzarti la mattina con gli scatoloni di
@@ -103,14 +103,18 @@
                         </h3>
                         <p class="text-light">Non sarà più necessario fare i salti mortali per trovare qualcuno a cui
                             regalare gli oggetti che non sono più di tuo interesse.
-                            Accedendo alla sezione donatori dell’app potrai caricare immagini e descrizioni degli
+                            Accedendo alla sezione donatori dell'app potrai caricare immagini e descrizioni degli
                             oggetti che non usi più.
                             Quando uno dei nostri utenti si mostrerà interessato a un tuo articolo, potrai contattarlo
-                            facilmente con l’apposita chat.</p>
+                            facilmente con l'apposita chat.</p>
                     </div>
-                    <div class="row d-none d-md-flex justify-content-between">
-                        <img class="col-md-4" src="imgs/App/PrivatiPhone.png" alt="Mockup App Per privati">
-                        <div class="col-md-6 row gy-4">
+                    <div class="row d-none d-md-flex justify-content-between align-items-center">
+                        <img class="col-md-4" src="imgs/App/PrivatiPhone.png" style="object-fit: cover;"
+                            alt="Mockup App Per privati">
+
+                        <!-- qua la larghezza delle colonne tra md e lg a 6 fa cagare quindi l'ho messa
+                        a 7 per rispecchiare il mockup -->
+                        <div class="col-md-7 col-lg-6 row gy-5 mt-0">
                             <div class="d-flex align-items-end">
                                 <h2 style="color: var(--bs-yellow)">Privati</h2>
                                 <img class="mx-4" src="imgs/App/MiniaturePrivati.png">
@@ -134,7 +138,7 @@
         <div class="container-fluid bg-yellow">
             <div class="container app-aziende">
                 <div class="d-flex flex-column">
-                    <div class="row d-md-none gy-4 justify-content-center">
+                    <div class="row d-md-none gy-5 justify-content-center">
                         <h2 class="text-center">Aziende</h2>
                         <img src="imgs/App/AziendePhoneMob.png" alt="Mockup app per aziende" style="width: 75vw;">
                         <h3 class="text-dark text-center">Se sei un'azienda, dovresti adottare un modello di business
@@ -146,9 +150,10 @@
                             facilmente ritirarlo in sede.
                             Con pochi click, aiuterai il prossimo, diminuirai lo spreco e favorirai il riciclo. </p>
                     </div>
-                    <div class="row d-none d-md-flex justify-content-between">
-
-                        <div class="col-md-6 row gy-4">
+                    <div class="row d-none d-md-flex justify-content-between align-items-center">
+                        <!-- qua la larghezza delle colonne tra md e lg a 6 fa cagare quindi l'ho messa
+                        a 7 per rispecchiare il mockup -->
+                        <div class="col-md-7 col-lg-6 row gy-5 mt-0">
                             <div class="d-flex align-items-end">
                                 <h2>Aziende</h2>
                                 <img class="mx-4" src="imgs/App/MiniatureAziende.png">
@@ -164,7 +169,8 @@
                                 facilmente ritirarlo in sede.
                                 Con pochi click, aiuterai il prossimo, diminuirai lo spreco e favorirai il riciclo. </p>
                         </div>
-                        <img class="col-md-4" src="imgs/App/AziendePhone.png" alt="Mockup app per aziende">
+                        <img class="col-md-4" src="imgs/App/AziendePhone.png" style="object-fit: cover;"
+                            alt="Mockup app per aziende">
                     </div>
                 </div>
             </div>
