@@ -5,6 +5,10 @@
 
 /*----------------- Typography Mobile ------------------*/
 
+/*----------------- ATTENZIONE ------------------*/
+/*tipografia da integrare ancora con l'attributo "clamp" per la font size
+ così da dare un valore minimo e massimo alla dimensione */
+
 h1 {
     font-family: 'Poppins';
     font-style: normal;
@@ -54,7 +58,7 @@ body {
     font-family: 'Libre Bodoni';
     font-style: normal;
     font-weight: 400 !important;
-    font-size: 2vw;
+    font-size: clamp(18px, 2vw, 40px);
     line-height: 38px;
 }
 
@@ -218,6 +222,7 @@ a {
         font-style: normal;
         font-weight: 400;
         font-size: 1.5vw;
+        /* font-size: clamp(16px, 1.5vw, 28px); */
         line-height: 2vw;
         /*letter-spacing: ?*/
     }
