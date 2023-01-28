@@ -34,8 +34,8 @@
 
 .headerRe {
     background-image: url("imgs/HomePage/HeaderHomeMobile.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size: contain;/* 
+    background-repeat: no-repeat; */
     height: 86.8vw;
 }
 
@@ -77,8 +77,8 @@
 /*----------------- Header ------------------*/
 .headerApp {
     background-image: url("imgs/App/HeaderAppMobile.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size: contain;/* 
+    background-repeat: no-repeat; */
     height: 89.7vw;
 }
 
