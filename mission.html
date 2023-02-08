@@ -1,125 +1,314 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <link href="bsOverride.css" type="text/css" rel="stylesheet">
-    <link href="style.css" type="text/css" rel="stylesheet">
-    <title>Homepage</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="bsOverride.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<link href="style.css" type="text/css" rel="stylesheet" />
+	<title>Mission</title>
 </head>
 
 <body>
-    
-    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        QUESTA PAGINA è UNA PAGINA DI PROVA PER IMPLEMENTARE 
-        LO SLIDER E LE VERSIONI ALTERNATIVE DELLA NAVBAR 
-        PER FAR FUNZIONARE IL DROPDOWN MENU
-    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+	<!--Navbar-->
+	<nav class="navbar navbar-expand-md sticky-top">
+		<a class="navbar-brand" href="index.html"><img src="imgs/Logo/LogoMobile.svg" alt="ReUse logo" /></a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+			aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+				<a class="nav-link" href="index.html">Home</a>
+				<a class="nav-link" id="activeMenu" aria-current="page" href="mission.html">Mission</a>
+				<a class="nav-link" href="aboutus.html">Su di noi</a>
+				<a class="nav-link" href="app.html">App</a>
+				<a class="nav-link" href="events.html">Eventi</a>
+				<a class="nav-link" href="community.html">Community</a>
+			</div>
+		</div>
+	</nav>
 
-    <!--Navbar-->
-    <!-- <nav class="navbar navbar-expand-md sticky-top">
-        <div class="container-fluid ">
-            <div class="container d-flex justify-content-between">
-                <div class="m-md-auto" id="logo">
-                    <a class="navbar-brand" href="index.html"><img src="imgs/Logo/LogoMobile.svg"></a>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                        <a class="nav-link" href="#">Mission</a>
-                        <a class="nav-link" href="#">Su di noi</a>
-                        <a class="nav-link" href="app.html">App</a>
-                        <a class="nav-link" href="#">Eventi</a>
-                        <a class="nav-link" href="#">Community</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-    prova per sistemare navbar -->
-    <!-- NAVBAR BUONA -->
-    <nav class="navbar navbar-expand-md sticky-top">
-        <div class="container d-flex justify-content-between">
-            <div class="m-md-auto" id="logo">
-                <a class="navbar-brand" href="index.html"><img src="imgs/Logo/LogoMobile.svg"></a>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="navbar-nav d-flex">
-                    <div class="d-md-none">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                        <a class="nav-link" href="#">Mission</a>
-                        <a class="nav-link" href="#">Su di noi</a>
-                    </div>
-                    <div class="d-md-none">
-                        <a class="nav-link" href="app.html">App</a>
-                        <a class="nav-link" href="#">Eventi</a>
-                        <a class="nav-link" href="#">Community</a>
-                    </div>
-                    <a class="nav-link d-none d-md-block" aria-current="page" href="index.html">Home</a>
-                    <a class="nav-link d-none d-md-block" href="#">Mission</a>
-                    <a class="nav-link d-none d-md-block" href="#">Su di noi</a>
-                    <a class="nav-link d-none d-md-block" href="app.html">App</a>
-                    <a class="nav-link d-none d-md-block" href="#">Eventi</a>
-                    <a class="nav-link d-none d-md-block" href="#">Community</a>
-                </div>
-            </div>
-        </div>
-    </nav> 
-   
-    <!--Header-->
-    <header>
-        <div class="headerRe container-fluid">
-            <div class="title container">
-                <h1>ReUse</h1>
-                <p class="subtitle">Non lo usi?<br>Qualcun'altro lo farà</p>
-            </div>
-        </div>
-    </header>
-    <main>
-        <img src="imgs/Mission/Risparmia2.svg">
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">Slide 1</div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
-              ...
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-          
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-          </div>
-    </main>
-        
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="index.js"></script>
+	<!--Header desktop-->
+	<header>
+		<div class="headerMission container-fluid">
+			<div class="titleMission container">
+				<h1>Mission</h1>
+				<h2 class="subtitle">
+					Noi ci crediamo <br />
+					davvero, e tu?
+				</h2>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<!--body-->
+		<div class="container-fluid">
+			<div class="container spacerM">
+				<div class="d-flex flex-column">
+					<div class="row d-md-none gy-5">
+						<h2 class="text-center">Goal Agenda 2030</h2>
+						<hr class="underline" />
+						<p>
+							ReUse nasce dalla sensibilità di 6 studenti, che credono
+							nell’ideale di un consumo responsabile e sostenibile. E’ una
+							cosa seria, lo dice anche il goal numero 12 dell’Agenda dello
+							Sviluppo Sostenibile 2030
+						</p>
+						<img src="imgs/Mission/GoalImageMobile.png" alt="Arch Girl mobile" />
+					</div>
+					<div class="row d-none d-md-flex">
+						<div class="col-md-6" id="positionimage">
+							<img style="width: 85%" src="imgs/Mission/GoalImage.png" alt="Arch girl desktop" />
+						</div>
+						<div class="col-md-6">
+							<h2 class="d-none d-md-block text-center text-md-start">
+								Goal 12 Agenda 2030
+							</h2>
+							<hr class="underline" />
+							<p>
+								ReUse nasce dalla sensibilità di 6 studenti, che credono
+								nell’ideale di un consumo responsabile e sostenibile. E’ una
+								cosa seria, lo dice anche il goal numero 12 dell’ Agenda dello
+								Sviluppo Sostenibile 2030, il quale vorrebbe:
+							</p>
+							<ul>
+								<li>
+									Entro il 2030, ridurre in modo sostanziale la produzione di
+									rifiuti attraverso la prevenzione, la riduzione, il
+									riciclaggio e il riutilizzo.
+								</li>
+								<li>
+									Incoraggiare le imprese, soprattutto le aziende di grandi
+									dimensioni e transnazionali, ad adottare pratiche
+									sostenibili .
+								</li>
+							</ul>
+							<p>
+								Noi comunque non vogliamo fartela troppo seria ma è davvero
+								un’opportunità unica per tutti. Provare per credere! Se ancora
+								non sei convinto, leggi sotto i vantaggi di ReUse (non ti
+								preoccupare, sono poche righe).
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Swiper su mobile -->
+		<div class="container-fluid bg-secondary d-md-none">
+			<div class="slide-mobile">
+				<div class="swiper mySwiper swiper-initialized swiper-horizontal swiper-backface-hidden bg-secondary d-md-none"
+					style="margin-top: 25vw">
+					<div class="swiper-wrapper" id="swiper-wrapper-59689ce26d2110f94" aria-live="polite">
+						<div class="swiper-slide" style="width: 2189px" role="group" aria-label="1 / 3">
+							<div class="d-flex flex-column">
+								<div class="row d-md-none gy-5 justify-content-center">
+									<div class="border border-primary slide-circle-only slider-boxMission">
+										<div class="d-flex flex-column">
+											<div class="row d-md-none justify-content-center" style="margin-top: 8vw">
+												<img src="imgs/Mission/Foot.png" alt="thumbnail for title"
+													style="width: 50vw" />
+												<h2 class="text-center" style="color: var(--bs-text-dark)">
+													Risparmia
+												</h2>
+												<hr class="opacity-100" style="
+															width: 40.77vw;
+															border: 0.6vw solid;
+															color: var(--bs-secondary);
+															margin: auto;
+														" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide" style="width: 2189px" role="group" aria-label="2 / 3">
+							<div class="d-flex flex-column">
+								<div class="row d-md-none gy-5 justify-content-center">
+									<div class="border border-primary slide-circle-only slider-boxMission">
+										<div class="d-flex flex-column">
+											<div class="row d-md-none justify-content-center" style="margin-top: 12vw">
+												<img src="imgs/Mission/Ricicla.png" alt="thumbnail for title"
+													style="width: 30vw; padding-bottom: 33px" />
+												<h2 class="text-center" style="color: var(--bs-text-dark)">
+													Ricicla
+												</h2>
+												<hr class="opacity-100" style="
+															width: 40.77vw;
+															border: 0.6vw solid;
+															color: var(--bs-secondary);
+															margin: auto;
+														" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide" style="width: 2189px" role="group" aria-label="3 / 3">
+							<div class="d-flex flex-column">
+								<div class="row d-md-none gy-5 justify-content-center">
+									<div class="border border-primary slide-circle-only slider-boxMission">
+										<div class="d-flex flex-column">
+											<div class="row d-md-none justify-content-center" style="margin-top: 12vw">
+												<img src="imgs/Mission/Liberati.png" alt="thumbnail for title"
+													style="width: 30vw; padding-bottom: 33px" />
+												<h2 class="text-center" style="color: var(--bs-text-dark)">
+													Liberati
+												</h2>
+												<hr class="opacity-100" style="
+															width: 40.77vw;
+															border: 0.6vw solid;
+															color: var(--bs-secondary);
+															margin: auto;
+														" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal swiper-pagination-bullets-dynamic"
+						style="width: 80px">
+						<span
+							class="swiper-pagination-bullet swiper-pagination-bullet-active swiper-pagination-bullet-active-main"
+							style="left: 32px" aria-current="true"></span><span
+							class="swiper-pagination-bullet swiper-pagination-bullet-active-next"
+							style="left: 32px"></span><span
+							class="swiper-pagination-bullet swiper-pagination-bullet-active-next-next"
+							style="left: 32px"></span><span class="swiper-pagination-bullet"
+							style="left: 32px"></span><span class="swiper-pagination-bullet"
+							style="left: 32px"></span><span class="swiper-pagination-bullet" style="left: 32px"></span>
+					</div>
+					<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+				</div>
+
+				<!-- Initialize Swiper -->
+				<script>
+					var swiper = new Swiper(".mySwiper", {
+						pagination: {
+							el: ".swiper-pagination",
+							dynamicBullets: true,
+						},
+					});
+				</script>
+			</div>
+		</div>
+
+		<!--Swiper su desktop-->
+		<div class="container-fluid bg-secondary align-items-center">
+			<div class="d-none d-md-flex swiper mySwiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+				<div class="swiper-wrapper" id="swiper-wrapper-baf5411593c44d6c" aria-live="polite">
+					<div class="swiper-slide" style="padding-top: 8%" role="group" aria-label="1 / 3">
+						<div class="d-flex">
+							<img style="width: 40vw" src="imgs/Mission/CirlceSlider.svg" alt="Save money" />
+						</div>
+					</div>
+
+					<div class="swiper-slide" style="padding-top: 8%" role="group" aria-label="2 / 3">
+						<div class="d-flex">
+							<img style="width: 40vw" src="imgs/Mission/CirlceSlider2.svg" alt="Recycle" />
+						</div>
+					</div>
+
+					<div class="swiper-slide" style="padding-top: 8%" role="group" aria-label="3 / 3">
+						<div class="d-flex">
+							<img style="width: 40vw" src="imgs/Mission/CirlceSlider3.svg" alt="Clear mind" />
+						</div>
+					</div>
+				</div>
+				<div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"
+					aria-controls="swiper-wrapper-baf5411593c44d6c" aria-disabled="false"
+					style="color: white; margin-right: 4.5rem"></div>
+				<div class="swiper-button-prev swiper-button-disabled" tabindex="-1" role="button"
+					aria-label="Previous slide" aria-controls="swiper-wrapper-baf5411593c44d6c" aria-disabled="true"
+					style="color: white; margin-left: 4.5rem"></div>
+				<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+			</div>
+			<script>
+				var swiper = new Swiper(".mySwiper", {
+					navigation: {
+						nextEl: ".swiper-button-next",
+						prevEl: ".swiper-button-prev",
+					},
+				});
+			</script>
+		</div>
+
+		<div class="container-fluid">
+			<div class="container spacerM">
+				<div class="d-flex flex-column">
+					<div class="row gy-5">
+						<h2 class="text-center">
+							Essere sostenibili è uno stile di vita!
+						</h2>
+						<hr id="underline2" />
+						<div class="d-flex flex-column text-md-center justify-content-center">
+							<p class="d-md-none">Puoi recuperare gratuitamente oggetti incredibili che non nascono più, figli di altre
+								mode e altri tempi e contemporaneamente avere un impatto positivo sul mondo.
+								Per noi questa è una vittoria per tutti, tu che dici?</p>
+							<p class="d-none d-md-inline">
+								Quante volte te l’hanno ripetuto? Bisogna avere uno stile di
+								vita più sostenibile! Si lo sappiamo, questi discorsi un po’
+								stufano.
+							</p>
+							<p class="d-none d-md-inline">
+								Ma guarda il lato positivo, puoi recuperare gratuitamente
+								oggetti incredibili che non nascono più, figli di altre mode e
+								altri tempi e contemporaneamnete avere un impatto positivo sul
+								mondo. Per noi questa è una vittoria per tutti, tu che dici?
+							</p>
+							<img class="d-md-none" src="imgs/Mission/LifestyleImage.png" alt="Explore girl" />
+							<img class="d-none d-md-block mx-auto" src="imgs/Mission/LifestyleImageDesktop.png"
+								alt="Explore girl" style="width: 50vw" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="container-fluid custom-footer">
+			<div class="container d-flex justify-content-between">
+				<div class="footer-left d-none d-md-flex flex-md-column">
+					<a href="#">Termini e condizioni</a>
+					<a href="#">Informativa sulla privacy</a>
+					<a href="#">Informativa relativa ai cookie</a>
+				</div>
+				<div class="footer-right d-flex flex-column m-auto m-md-0">
+					<div class="footer-icons m-auto">
+						<img src="imgs/Logo/IconsMob/TelegramMob.svg" alt="telegram logo" />
+						<img src="imgs/Logo/IconsMob/InstagramMob.svg" alt="Instagram logo" />
+						<img src="imgs/Logo/IconsMob/FacebookMob.svg" alt="Facebook logo" />
+					</div>
+					<button type="button" class="btn btn-yellow m-auto">
+						Scarica l'app
+					</button>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+		integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+		integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+		crossorigin="anonymous"></script>
 </body>
 
 </html>

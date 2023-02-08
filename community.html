@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+			integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link href="bsOverride.css" type="text/css" rel="stylesheet" />
+		<link href="style.css" type="text/css" rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+		/>
+
+		<title>Community</title>
+	</head>
+
+	<body>
+		<!--Navbar-->
+		<nav class="navbar navbar-expand-md sticky-top">
+			<a class="navbar-brand" href="index.html"
+				><img src="imgs/Logo/LogoMobile.svg" alt="ReUse logo"
+			/></a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-bs-toggle="collapse"
+				data-bs-target="#navbarNavAltMarkup"
+				aria-controls="navbarNavAltMarkup"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-link" href="index.html">Home</a>
+					<a class="nav-link" href="mission.html">Mission</a>
+					<a class="nav-link" href="aboutus.html">Su di noi</a>
+					<a class="nav-link" href="app.html">App</a>
+					<a class="nav-link" href="events.html">Eventi</a>
+					<a
+						class="nav-link"
+						id="activeMenu"
+						aria-current="page"
+						href="community.html"
+						>Community</a
+					>
+				</div>
+			</div>
+		</nav>
+
+		<header>
+			<div class="headerCom container-fluid">
+				<div class="container">
+					<div class="titleCom">
+						<h1>Community</h1>
+						<h2 class="subtitle">
+							ReUse non è solo un'app, è un miscuglio di persone!
+						</h2>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<div class="container-fluid">
+				<div class="container spacerM">
+					<div class="d-flex flex-column">
+						<div class="row d-md-none gy-5">
+							<h2 class="text-center">
+								La nostra<br />
+								community è piena<br />
+								di bella gente
+							</h2>
+							<img
+								src="imgs/Community/TwoGirlsMobile.png"
+								alt="Two girls talking"
+							/>
+							<p>
+								Dentro si parla, si scherza, si cresce. Potrebbe essere la prima
+								volta in cui non disattivi le notifiche di un gruppo!
+							</p>
+							<a
+								href="app.html"
+								class="d-flex d-md-none btn btn-primary mx-auto buttontext"
+								role="button"
+								>Entra</a
+							>
+						</div>
+					</div>
+					<div
+						class="row d-none d-md-flex justify-content-between align-items-center"
+					>
+						<div class="col-md-7 row gy-4 mt-0">
+							<h2 class="d-none d-md-block text-center text-md-start my-5">
+								La nostra community <br />è piena di bella gente
+							</h2>
+							<p>
+								Dentro si parla, si scherza, si cresce. Potrebbe essere la<br />
+								prima volta in cui non disattivi le notifiche di un gruppo!
+							</p>
+							<a
+								href="#"
+								class="d-none d-md-flex btn btn-primary buttontext"
+								role="button"
+								>Entra</a
+							>
+						</div>
+						<picture class="col-md-5 px-0 object-fit-cover">
+							<img
+								src="imgs/Community/TwoGirlsDesktop.png"
+								alt="Mockup of the ReUse app"
+								class="img-fluid"
+							/>
+						</picture>
+					</div>
+				</div>
+			</div>
+
+			<!--Tanti lo hanno già fatto-->
+			<div class="container-fluid bg-secondary">
+				<div class="container spacerP">
+					<div class="d-flex flex-column">
+						<div class="row d-md-none gy-5">
+							<h2 class="text-center text-light mb-5">
+								Tanti lo hanno già fatto!
+							</h2>
+							<!-- Swiper -->
+							<div class="swiper mySwiper mb-5">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<img
+											style="width: 85%; height: auto"
+											src="imgs/Community/NuotatoreMobile.png"
+											alt="Nuotatore"
+										/>
+									</div>
+									<div class="swiper-slide">
+										<img
+											style="width: 85%; height: auto"
+											src="imgs/Community/MusicistaMobile.png"
+											alt="Musicista"
+										/>
+									</div>
+									<div class="swiper-slide">
+										<img
+											style="width: 85%; height: auto"
+											src="imgs/Community/BallerinoMobile.png"
+											alt="Ballerino"
+										/>
+									</div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+
+							<!-- Swiper JS -->
+							<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+							<!-- Initialize Swiper -->
+						</div>
+
+						<div class="d-flex flex-column">
+							<div class="row gy-5">
+								<h2 class="d-none text-center text-light">
+									Tanti lo hanno già fatto!
+								</h2>
+								<div class="nuoto-com d-none d-md-flex justify-content-between">
+									<div class="d-flex flex-column align-items-center mt-5">
+										<img
+											src="imgs/Community/NuotatoreDesktop1.png"
+											style="max-width: 19vw"
+											alt="Nuotatore"
+										/>
+										<p class="text-center text-light my-5">
+											Alla ricerca degli <br />occhiali per la piscina
+										</p>
+									</div>
+									<div class="d-flex flex-column align-items-center mt-5">
+										<img
+											src="imgs/Community/MusicistaDesktop1.png"
+											style="max-width: 19vw"
+											alt="Musicista"
+										/>
+										<p class="text-center text-light my-5">
+											Alla ricerca di dischi<br />
+											vecchi e polverosi
+										</p>
+									</div>
+									<div class="d-flex flex-column align-items-center mt-5">
+										<img
+											src="imgs/Community/BallerinoDesktop1.png"
+											style="max-width: 19vw"
+											alt="Ballerino"
+										/>
+										<p class="text-center text-light my-5">
+											Alla ricerca del nuovo<br />
+											outfit per la pista
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--Gruppi in voga-->
+
+			<div class="container-fluid">
+				<div class="container spacerM">
+					<h2 class="h2graziato text-center">
+						Alcuni dei nostri gruppi più in voga!
+					</h2>
+				</div>
+			</div>
+
+			<div class="container-fluid bg-yellow">
+				<div class="container bici-com">
+					<div class="d-flex flex-column">
+						<div class="row d-md-none gy-5 my-5 justify-content-center">
+							<img
+								src="imgs/Community/BicicletteMobile.png"
+								alt="Bici"
+								style="width: 75vw"
+							/>
+							<h2 class="h2graziato text-center my-5">Biciclette</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid bg-red">
+				<div class="container bici-com">
+					<div class="d-flex flex-column">
+						<div class="row d-md-none gy-5 my-5 justify-content-center">
+							<img
+								src="imgs/Community/MobiliMobile.png"
+								alt="Mobili"
+								style="width: 75vw"
+							/>
+							<h2 class="h2graziato text-center text-light my-5">Mobili</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid bg-yellow">
+				<div class="container bici-com">
+					<div class="d-flex flex-column">
+						<div class="row d-md-none gy-5 my-5 justify-content-center">
+							<img
+								src="imgs/Community/VestitiMobile.png"
+								alt="Vestito"
+								style="width: 75vw"
+							/>
+							<h2 class="h2graziato text-center my-5">Vestiti</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div
+				class="container-fluid d-none d-md-flex justify-content-between"
+				style="padding: 0"
+			>
+				<div class="tipivoga d-flex flex-column align-items-center bg-yellow">
+					<img
+						class="mt-5"
+						src="imgs/Community/BicicletteDesktop.png"
+						alt="Bicicletta"
+					/>
+					<h2 class="h2graziato text-center my-5">Biciclette</h2>
+				</div>
+
+				<div class="tipivoga d-flex flex-column align-items-center bg-red">
+					<img
+						class="mt-5"
+						src="imgs/Community/MobiliDesktop.png"
+						alt="Mobile"
+					/>
+					<h2 class="h2graziato text-center text-light my-5">Mobili</h2>
+				</div>
+				<div class="tipivoga d-flex flex-column align-items-center bg-yellow">
+					<img
+						class="mt-5"
+						src="imgs/Community/VestitiDesktop.png"
+						alt="Vestito"
+					/>
+					<h2 class="h2graziato text-center my-5">Vestiti</h2>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="container-fluid custom-footer">
+				<div
+					class="container d-flex justify-content-between align-items-center"
+				>
+					<div class="footer-left d-none d-md-flex flex-md-column">
+						<a href="#">Termini e condizioni</a>
+						<a href="#">Informativa sulla privacy</a>
+						<a href="#">Informativa relativa ai cookie</a>
+					</div>
+					<div class="footer-right d-flex flex-column m-auto m-md-0">
+						<div class="footer-icons m-auto">
+							<img
+								src="imgs/Logo/IconsMob/TelegramMob.svg"
+								alt="Telegram icon"
+							/>
+							<img
+								src="imgs/Logo/IconsMob/InstagramMob.svg"
+								alt="Instagram icon"
+							/>
+							<img
+								src="imgs/Logo/IconsMob/FacebookMob.svg"
+								alt="facebook icon"
+							/>
+						</div>
+						<button type="button" class="btn btn-yellow m-auto">
+							Scarica l'app
+						</button>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+			integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+			integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+			crossorigin="anonymous"
+		></script>
+		<script>
+			var swiper = new Swiper(".mySwiper", {
+				pagination: {
+					el: ".swiper-pagination",
+					dynamicBullets: true,
+				},
+			});
+		</script>
+	</body>
+</html>

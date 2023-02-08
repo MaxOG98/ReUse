@@ -1,196 +1,595 @@
 /*----------------- Navbar ------------------*/
 
 .navbar-nav {
-    width: 100%;
-    justify-content: space-between;
+	width: 80%;
+	justify-content: space-between;
+	margin-top: 10px;
+	margin: auto;
+	margin-right: 25%;
 }
 
 .navbar a {
-    color: #F9F5F4;
+	color: #f9f5f4;
+}
+.navbar a:hover {
+	color: var(--bs-yellow);
 }
 
 .navbar-toggler {
-    border: none;
-    width: 10vw;
-    padding: 0;
+	border: none;
+	width: 10vw;
+	padding: 0px;
 }
 
 #logo {
-    margin-right: 2rem !important;
+	margin-right: 2rem !important;
 }
 
 #navbar-row {
-    width: 100%;
-    justify-content: space-between;
+	width: 100%;
+	justify-content: space-between;
 }
 
 .navbar-toggler-icon {
-    background-image: url("imgs/Icons/hamburgerMenu.svg");
+	background-image: url("imgs/Icons/hamburgerMenu.svg");
+}
+
+#activeMenu {
+	color: var(--bs-yellow);
 }
 
 /*----------------- HOME ------------------*/
 
-/*----------------- Header ------------------*/
-
 .headerRe {
-    background-image: url("imgs/HomePage/HeaderHomeMobile.png");
-    background-size: contain;/* 
-    background-repeat: no-repeat; */
-    height: 86.8vw;
+	background-image: url("imgs/HomePage/HeaderHomeMobile.png");
+	background-size: cover;
+	height: 89.7vw;
 }
 
 .title {
-    position: relative;
-    top: 26.6vw;
+	position: relative;
+	top: 26.6vw;
 }
 
-/*----------------- Button back to top ------------------*/
-#btn-back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
+.spacerM {
+	margin: 10vw auto;
 }
 
-/*----------------- Main section ------------------*/
-
-.mission-homepage,
-.sponsor-homepage, 
-.ciPiace-App {
-    /*esprimibile con classe mt*/
-    margin: 20vw auto;
-}
-
-.mission-homepage>div {
-    margin: 3vw 0;
-}
-
-.app-homepage, .app-privati, .app-aziende {
-    padding: 20vw 1.5rem;
+.spacerP {
+	padding: 20vw 1.5rem;
 }
 
 .custom-footer img {
-    padding: 0.8vw;
+	padding: 0.8vw;
 }
 
 /*----------------- APP ------------------*/
-/*----------------- Header ------------------*/
 .headerApp {
-    background-image: url("imgs/App/HeaderAppMobile.png");
-    background-size: contain;/* 
-    background-repeat: no-repeat; */
-    height: 89.7vw;
+	background-image: url("imgs/App/HeaderAppMobile.png");
+	background-size: cover;
+	height: 89.7vw;
 }
 
 .titleApp {
-    position: relative;
-    top: 3vw;
-    width: 70%;
+	position: relative;
+	top: 3vw;
+	width: 70%;
 }
 
-/*----------------- Main ------------------*/
 .borderTopApp {
-    background-image: url(imgs/App/BorderTopMob.png);
-    height: 20vw;
-    background-size: cover;
+	background-image: url(imgs/App/BorderTopMob.png);
+	height: 20vw;
+	background-size: cover;
 }
 
 .borderBottomApp {
-    background-image: url(imgs/App/BorderBottomMobpng.png);
-    height: 27vw;
-    background-size: cover;
+	background-image: url(imgs/App/BorderBottomMobpng.png);
+	height: 27vw;
+	background-size: cover;
 }
 
 .bg-privati {
-    background-image: url(imgs/App/backgroundAppPrivatiMobile.png);
-    background-size: cover;
+	background-image: url(imgs/App/backgroundAppPrivatiMobile.png);
+	background-size: cover;
 }
 
+#bottoniMobileApp {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 5%;
+}
 
+.bottonidiv {
+	padding: 5% 0;
+}
+
+/*----------------- COMMUNITY ------------------*/
+
+.headerCom {
+	background-image: url("imgs/Community/HeaderComMobile.png");
+	background-size: cover;
+	height: 96.9vw;
+}
+
+.titleCom {
+	position: relative;
+	top: 8vw;
+	width: 60%;
+	float: left;
+}
+
+.swiper-slide > img {
+	margin-bottom: 50px;
+}
+
+.swiper-slide {
+	display: flex;
+	justify-content: center;
+}
+
+.grazia-com {
+	color: #004643;
+}
+
+.gruppivoga {
+	display: flex;
+	flex-direction: row;
+}
+
+.tipivoga {
+	width: 33.33vw;
+}
+
+/*----------------- ABOUT US ------------------*/
+
+.headerAboutus {
+	background-image: url("imgs/Aboutus/HeaderAboutusMobile.png");
+	background-size: cover;
+	height: 89.7vw;
+}
+
+.titleAboutus {
+	padding-top: 16.4vw;
+}
+
+.ribbon {
+	background-image: url(imgs/Aboutus/ribbon.svg);
+	height: 33vw;
+	background-size: cover;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.aboutus-bottom {
+	padding: 13.4vw 1.5rem;
+}
+
+.hr {
+	margin-top: -1.5vw;
+	width: 72vw;
+	color: #f8d03c;
+	border: 2vw solid;
+}
+
+span.swiper-pagination-bullet:nth-child(1),
+span.swiper-pagination-bullet:nth-child(2),
+span.swiper-pagination-bullet:nth-child(3),
+span.swiper-pagination-bullet:nth-child(4),
+span.swiper-pagination-bullet:nth-child(5),
+span.swiper-pagination-bullet:nth-child(6) {
+	background-color: var(--bs-yellow);
+	width: 3.5vw;
+	height: 3.5vw;
+}
+
+.slider-box {
+	width: 87.7vw;
+	height: 87.7vw;
+	border-radius: 50%;
+	background-color: var(--bs-text-light);
+}
+
+.swiper-pagination {
+	margin-top: 550px;
+}
+
+.slide-mobile {
+	padding-top: 35vw;
+	padding-bottom: 35vw;
+}
+
+.slide-circle-only {
+	margin-bottom: 10vw;
+}
+
+/*--------------------------MISSION-------------------------- */
+.headerMission {
+	background-image: url("imgs/Mission/HeaderMission.png");
+	background-size: cover;
+	height: 62.5vw;
+}
+
+.titleMission {
+	padding-top: 11.67vw;
+}
+
+.underline {
+	margin: auto;
+	background-color: var(--bs-red);
+	height: 8px;
+	width: 70%;
+	opacity: 1;
+	border-width: 0;
+}
+
+.slider-boxMission {
+	width: 87.7vw;
+	height: 87.7vw;
+	border-radius: 50%;
+	background-color: var(--bs-yellow);
+}
+#underline2 {
+	margin: auto;
+	margin-bottom: 8%;
+	background-color: var(--bs-red);
+	height: 4px;
+	width: 70%;
+	opacity: 1;
+	border-width: 0;
+}
+
+/*----------------------EVENTS---------------------------*/
+
+.headerEvents {
+	background-image: url("imgs/Events/HeaderEventsMobile.png");
+	background-size: cover;
+	height: 89.7vw;
+}
+
+.titleEvents {
+	padding-top: 11.67vw;
+}
+.subtitleCard {
+	width: 50%;
+}
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	height: 475px;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-left: 5%;
+	margin-right: 5%;
+	background-color: var(--bs-primary);
+	border: 3px solid var(--bs-secondary);
+}
+.event {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	height: 65%;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.event > h3 {
+	text-align: center;
+}
+.event > h3 {
+	padding-top: 20px;
+}
+.ImgCard {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+.ContainerImgCard {
+	height: 35%;
+	align-items: stretch;
+	display: flex;
+	border-top: 3px solid var(--bs-secondary);
+}
+.CardBox {
+	margin-top: 5%;
+}
+.number {
+	color: var(--bs-text-dark);
+}
+
+/*------------------SINGLE EVENT---------------------------*/
+.headerSwapping {
+	background-image: url("imgs/SingleEvents/HeaderSwapping.png");
+	background-size: cover;
+	height: 89.7vw;
+}
+
+.headerWorkshop {
+	background-image: url("imgs/SingleEvents/HeaderWorkshop.png");
+	background-size: cover;
+	height: 89.7vw;
+}
+
+.headerParty {
+	background-image: url("imgs/SingleEvents/HeaderParty.png");
+	background-size: cover;
+	height: 89.7vw;
+}
+
+.titleSingleEvents {
+	padding-top: 20%;
+}
+
+.centerTitle {
+	text-align: center;
+}
+
+.tagDesktop {
+	display: none;
+}
+
+.tagMobile {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.spacingtag {
+	padding-bottom: 3%;
+	padding-right: 3%;
+}
+
+.infoevents {
+	margin-top: 10%;
+}
+
+.infoline {
+	margin-right: auto;
+	background-color: var(--bs-yellow);
+	height: 8px;
+	width: 30%;
+	opacity: 1;
+	border-width: 0;
+}
+
+.infoevents > p {
+	font-weight: bold;
+}
+
+.infosocial {
+	font-weight: bold;
+}
+
+#startdescription {
+	margin: auto;
+	background-color: var(--bs-red);
+	height: 8px;
+	width: 80%;
+	opacity: 1;
+	border-width: 0;
+}
+
+.eventDescription {
+	margin-top: 8%;
+}
+
+.buttonSubscribe {
+	margin-top: 3%;
+}
+
+.bodybackgound {
+	background-color: aquamarine;
+}
 
 /*---------------------------- ------------- ---------------------------------------------------------------------------------------------*/
 /*---------------------------- Breakpoint-md ---------------------------------------------------------------------------------------------*/
 /*---------------------------- ------------- ---------------------------------------------------------------------------------------------*/
 
 @media (min-width: 768px) {
+	/*----------------- HOME ------------------*/
+	.navbar-nav {
+		width: 97%;
+		justify-content: space-between;
+		margin: auto;
+	}
+	.headerRe {
+		background-image: url("imgs/HomePage/HeaderHomeDesktop.png");
+		background-size: contain;
+		height: 63.3vw;
+	}
 
-    /*----------------- HOME ------------------*/
+	.title {
+		position: relative;
+		width: 55%;
+		left: 22vw;
+		top: 17.5vw;
+	}
 
-    .headerRe {
-        background-image: url("imgs/HomePage/HeaderHomeDesktop.png");
-        background-size: contain;
-        /*ho specificato l'altezza perché altrimenti il background si ripete*/
-        height: 63.3vw;
-    }
+	.spacerM {
+		margin: 7vw auto;
+	}
 
-    .title {
-        position: relative;
-        width: 55%;
-        left: 22vw;
-        top: 17.5vw;
-    }
+	.numGroups-homepage {
+		margin: 7vw 0 !important;
+	}
 
-    .mission-homepage,
-    .sponsor-homepage,
-    .ciPiace-App {
-        margin: 7vw auto;
-    }
+	.numGroups-homepage div {
+		width: 17vw;
+	}
 
-    .mission-homepage>div {
-        margin: 3vw 0;
-    }
+	.spacerP {
+		padding: 7vw 1.5rem;
+	}
 
-    .numGroups-homepage {
-        margin: 7vw 0 !important;
-    }
+	/*----------------- APP ------------------*/
 
-    .numGroups-homepage div {
-        width: 17vw;
-    }
+	.headerApp {
+		background-image: url("imgs/App/HeaderAppDesktop2.png");
+		background-size: cover;
+		height: 61vw;
+	}
 
-    .app-homepage, .app-privati, .app-aziende {
-        padding: 7vw 1.5rem;
-    }
+	.titleApp {
+		position: relative;
+		width: 44vw;
+		top: 10vw;
+	}
 
-    /*----------------- APP ------------------*/
-    /*----------------- Header ------------------*/
+	.borderTopApp {
+		background-image: url(imgs/App/GreenBorderTop.png);
+		height: 20vw;
+		background-size: cover;
+	}
 
-    .headerApp {
-        background-image: url("imgs/App/HeaderAppDesktop2.png");
-        background-size: contain;
-        /*ho specificato l'altezza perché altrimenti il background si ripete*/
-        height: 61vw;
+	.borderBottomApp {
+		background-image: url(imgs/App/BorderBottom.png);
+		height: 27vw;
+		background-size: cover;
+	}
 
-    }
+	/*----------------- COMMUNITY ------------------*/
 
-    .titleApp {
-        position: relative;
-        width: 44vw;
-        top: 10vw
-    }
+	.headerCom {
+		background-image: url("imgs/Community/HeaderComDesktop.png");
+		background-size: cover;
 
-    .borderTopApp {
-        background-image: url(imgs/App/GreenBorderTop.png);
-        height: 20vw;
-        background-size: cover;
-    }
-    
-    .borderBottomApp {
-        background-image: url(imgs/App/BorderBottom.png);
-        height: 27vw;
-        background-size: cover;
-    }
-}
+		height: 50vw;
+	}
 
-/* Purtroppo ho dovuto barare e mettere un nuovlo limite per far si che non faccia schifo la disposizione dei bottoni nell'app*/
+	.titleCom {
+		position: relative;
+		top: 10vw;
+		float: left;
+	}
 
-@media (max-width: 382px) {
-    .AppSmallScreen {
-        flex-direction: column;
-        align-items: center;
-    }
+	/*----------------- ABOUTUS ------------------*/
 
-    .AppSmallScreen div {
-        margin: 2vw 0;
-    }
+	.headerAboutus {
+		background-image: url("imgs/Aboutus/HeaderAboutusDesktop.png");
+		background-size: cover;
+		height: 62.5vw;
+	}
+
+	.titleAboutus {
+		padding-top: 11.67vw;
+	}
+
+	.borderTopApp {
+		background-image: url(imgs/App/GreenBorderTop.png);
+		height: 20vw;
+		background-size: cover;
+	}
+
+	.borderBottomApp {
+		background-image: url(imgs/App/BorderBottom.png);
+		height: 27vw;
+		background-size: cover;
+	}
+
+	.hr {
+		margin-top: -3vw;
+		width: 57.7vw;
+		z-index: -1;
+		position: relative;
+		color: #f8d03c;
+		border: 1.2vw solid;
+	}
+
+	.slider-box {
+		width: 55vw;
+		height: auto;
+		background-color: var(--bs-text-light);
+		border-radius: 4.79vw;
+		box-shadow: 5px 10px var(--bs-yellow);
+	}
+
+	.swiper-slide {
+		margin-top: -8vw;
+		height: 61.8vw;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	/*---------------MISSION----------------*/
+
+	#underline {
+		margin-left: 0;
+		margin-bottom: 10%;
+		background-color: var(--bs-red);
+		height: 8px;
+		width: 70%;
+		opacity: 1;
+		border-width: 0;
+	}
+
+	#positionimage {
+		padding-top: 5%;
+	}
+
+	.slider-boxMission {
+		width: 43vw;
+		height: 40vw;
+		border-radius: 50%;
+		background-color: var(--bs-yellow);
+	}
+	#underline2 {
+		margin: auto;
+		margin-bottom: 8%;
+		background-color: var(--bs-red);
+		height: 8px;
+		width: 70%;
+		opacity: 1;
+		border-width: 0;
+	}
+	.underline {
+		margin-left: 0px;
+
+		margin-bottom: 35px;
+	}
+
+	.headerEvents {
+		background-image: url("imgs/Events/HeaderEventsDesktop.png");
+		background-size: cover;
+		height: 62.5vw;
+	}
+
+	.titleEvents {
+		padding-top: 11.67vw;
+	}
+
+	/*----------------------swapping Market---------------------*/
+
+	.tagDesktop {
+		display: inline;
+	}
+
+	.tagMobile {
+		display: none;
+	}
+
+	.infoevents {
+		margin-top: 10%;
+	}
+
+	.infoline {
+		margin-right: auto;
+		background-color: var(--bs-yellow);
+		height: 8px;
+		width: 30%;
+		opacity: 1;
+		border-width: 0;
+	}
+
+	#startdescription {
+		display: none;
+	}
+
+	.eventDescription {
+		margin-top: 2%;
+	}
+
+	.centerTitle {
+		text-align: left;
+	}
 }

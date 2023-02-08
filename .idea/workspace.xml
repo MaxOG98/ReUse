@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ac1459be-18eb-4c13-be20-cc9f693c1fd6" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Kx1IRpcQMG6dQVpUbf7rvuDNZ3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ac1459be-18eb-4c13-be20-cc9f693c1fd6" name="Changes" comment="" />
+      <created>1674901340309</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1674901340309</updated>
+      <workItem from="1674901341471" duration="11000" />
+      <workItem from="1674901395200" duration="4000" />
+      <workItem from="1674901447105" duration="12000" />
+      <workItem from="1674901460021" duration="6192000" />
+      <workItem from="1674910302090" duration="931000" />
+      <workItem from="1674911840042" duration="87000" />
+      <workItem from="1674912306773" duration="2646000" />
+      <workItem from="1674915260116" duration="265000" />
+      <workItem from="1674916107777" duration="568000" />
+      <workItem from="1674983102979" duration="241000" />
+      <workItem from="1675000238740" duration="1483000" />
+      <workItem from="1675162648524" duration="163000" />
+      <workItem from="1675164016295" duration="292000" />
+      <workItem from="1675164466383" duration="2324000" />
+      <workItem from="1675174294176" duration="4054000" />
+      <workItem from="1675245305274" duration="10333000" />
+      <workItem from="1675261400873" duration="7314000" />
+      <workItem from="1675280681135" duration="1589000" />
+      <workItem from="1675334126628" duration="12813000" />
+      <workItem from="1675380111198" duration="7204000" />
+      <workItem from="1675416028276" duration="4180000" />
+      <workItem from="1675426744588" duration="8366000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

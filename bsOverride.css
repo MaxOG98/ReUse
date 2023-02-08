@@ -1,255 +1,283 @@
 /*file che sovrascrive alcuni stili di bootstrap e definisce il nostro design system*/
 
-@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&family=Poppins:wght@400;700&family=Russo+One&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&family=Poppins:wght@400;700&family=Russo+One&display=swap");
 
 /*----------------- Typography Mobile ------------------*/
 
-/*----------------- ATTENZIONE ------------------*/
-/*tipografia da integrare ancora con l'attributo "clamp" per la font size
- così da dare un valore minimo e massimo alla dimensione */
-
 h1 {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: clamp(30px, 10.76vw, 70px);
-    line-height: 1.5;
-    color: var(--bs-text-light);
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 700;
+	font-size: clamp(30px, 10.76vw, 55px);
+	line-height: 1.5;
+	color: var(--bs-text-light);
 }
 
 h2 {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: clamp(35px, 8.76vw, 60px);
-    line-height: 1.5;
-    color: var(--bs-secondary);
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 700;
+	font-size: clamp(20px, 6vw, 50px);
+	line-height: 1.5;
+	color: var(--bs-secondary);
 }
 
 h3 {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: clamp(26px, 6.6vw, 40px);
-    line-height: 1.5;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 700;
+	font-size: clamp(16px, 4.5vw, 40px);
+	line-height: 1.5;
+}
+
+.h2graziato {
+	font-size: clamp(30px, 8.76vw, 50px);
+	font-family: "Libre Bodoni";
+	font-weight: 700;
+	line-height: 1.5;
+	color: var(--bs-secondary);
+	font-style: normal;
+}
+
+.link {
+	font-family: "Libre Bodoni";
+	font-style: normal;
+	font-weight: 400;
+	font-size: clamp(16px, 4.6vw, 20px);
+	line-height: 1.5;
+	color: var(--bs-text-dark);
+	text-decoration: underline;
+}
+.link:hover {
+	color: var(--bs-secondary);
 }
 
 .subtitle {
-    /*h3 serif*/
-    font-family: 'Libre Bodoni';
-    font-style: normal;
-    font-weight: 700;
-    font-size: clamp(26px, 6.6vw, 40px);
-    line-height: 1.5;
-    color: var(--bs-yellow);
+	/*h3 serif*/
+	font-family: "Libre Bodoni";
+	font-style: normal;
+	font-weight: 700;
+	font-size: clamp(20px, 6.6vw, 40px);
+	line-height: 1.5;
+	color: var(--bs-yellow);
 }
 
 body {
-    font-family: 'Libre Bodoni';
-    font-style: normal;
-    font-weight: 400;
-    font-size: clamp(16px, 4.6vw, 25px /* ???? */);
-    line-height: 1.5;
+	font-family: "Libre Bodoni";
+	font-style: normal;
+	font-weight: 400;
+	font-size: clamp(16px, 4.6vw, 25px);
+	line-height: 1.5;
 }
 
 .navbar {
-    background-color: #004643;
-    font-family: 'Libre Bodoni';
-    font-style: normal;
-    font-weight: 400 !important;
-    font-size: clamp(18px, 2vw, 40px);
-    line-height: 38px;
+	background-color: #004643;
+	font-family: "Libre Bodoni";
+	font-style: normal;
+	font-weight: 400 !important;
+	font-size: clamp(16px, 2vw, 30px);
+	line-height: 38px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10%;
+	padding-right: 10%;
+	width: 100%;
 }
 
 /*style for the footer*/
 .custom-footer a {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 2.5;
-    color: var(--bs-text-light);
-    text-decoration: none;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 21px;
+	line-height: 2.5;
+	color: var(--bs-text-light);
+	text-decoration: none;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+		border-color 0.15s ease-in-out;
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 /*----------------- Colors ------------------*/
 
 :root {
-    --bs-primary: #C4DCC6;
-    /*Acquamarina*/
-    --bs-primary-rgb: 196, 220, 198;
-    /*Acquamarina RGB*/
-    --bs-secondary: #004643;
-    /*Hard Green*/
-    --bs-secondary-rgb: 0, 70, 67;
-    /*Hard Green RGB*/
-    --bs-yellow: #F8D03C;
-    /*Sunny Yellow*/
-    --bs-red: #E22E20;
-    /*Light Red*/
-    --bs-body-bg: var(--bs-primary);
-    /*Body background color*/
-    --bs-bg-primary: var(--bs-primary-rgb);
-    /*Primary background color*/
-    --bs-bg-secondary: var(--bs-secondary-rgb);
-    /*Secondary background color*/
-    --bs-text-dark: #2E2E2E;
-    --bs-text-light: #F9F5F4;
+	--bs-primary: #c4dcc6;
+	/*Acquamarina*/
+	--bs-primary-rgb: 196, 220, 198;
+	/*Acquamarina RGB*/
+	--bs-secondary: #004643;
+	/*Hard Green*/
+	--bs-secondary-rgb: 0, 70, 67;
+	/*Hard Green RGB*/
+	--bs-yellow: #f8d03c;
+	/*Sunny Yellow*/
+	--bs-red: #e22e20;
+	/*Light Red*/
+	--bs-body-bg: var(--bs-primary);
+	/*Body background color*/
+	--bs-bg-primary: var(--bs-primary-rgb);
+	/*Primary background color*/
+	--bs-bg-secondary: var(--bs-secondary-rgb);
+	/*Secondary background color*/
+	--bs-text-dark: #2e2e2e;
+	--bs-text-light: #f9f5f4;
 }
 
 .bg-red {
-    background-color: var(--bs-red);
+	background-color: var(--bs-red);
 }
 
 .bg-yellow {
-    background-color: var(--bs-yellow);
+	background-color: var(--bs-yellow);
 }
 
 /*------------ Buttons -------------*/
 
 .btn {
-    --bs-btn-font-family: 'Poppins';
-    --bs-btn-font-size: 18px;
-    --bs-btn-font-weight: 700;
-    --bs-btn-line-height: 1.5;
-    --bs-btn-color: #212529;
-    --bs-btn-border-width: 4px;
-    --bs-btn-border-radius: 30px;
-    --bs-btn-box-shadow: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.25));
+	--bs-btn-font-family: "Poppins";
+	--bs-btn-font-size: 18px;
+	--bs-btn-font-weight: 700;
+	--bs-btn-line-height: 1.5;
+	--bs-btn-color: #212529;
+	--bs-btn-border-width: 4px;
+	--bs-btn-border-radius: 30px;
+	--bs-btn-box-shadow: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.25));
 }
 
 .btn-primary {
-    --bs-btn-color: var(--bs-secondary);
-    --bs-btn-bg: 0;
-    --bs-btn-border-color: var(--bs-secondary);
-    --bs-btn-hover-color: var(--bs-text-light);
-    --bs-btn-hover-bg: var(--bs-secondary);
-    --bs-btn-hover-border-color: var(--bs-secondary);
-    --bs-btn-focus-shadow-rgb: 49, 132, 253;
-    width: 160px;
-    height: 50px;
+	--bs-btn-color: var(--bs-secondary);
+	--bs-btn-bg: 0;
+	--bs-btn-border-color: var(--bs-secondary);
+	--bs-btn-hover-color: var(--bs-text-light);
+	--bs-btn-hover-bg: var(--bs-secondary);
+	--bs-btn-active-bg: var(--bs-secondary);
+	--bs-btn-active-border-color: var(--bs-secondary);
+
+	--bs-btn-hover-border-color: var(--bs-secondary);
+	--bs-btn-focus-shadow-rgb: 49, 132, 253;
+	width: 160px;
+	height: 50px;
 }
 
 .btn-secondary {
-    --bs-btn-color: #F9F5F4;
-    --bs-btn-bg: 0;
-    --bs-btn-border-color: #F9F5F4;
-    --bs-btn-hover-color: var(--bs-secondary);
-    --bs-btn-hover-bg: #F9F5F4;
-    --bs-btn-hover-border-color: #F9F5F4;
-    --bs-btn-focus-shadow-rgb: 49, 132, 253;
-    width: 160px;
-    height: 50px;
+	--bs-btn-color: #f9f5f4;
+	--bs-btn-bg: 0;
+	--bs-btn-border-color: #f9f5f4;
+	--bs-btn-hover-color: var(--bs-secondary);
+	--bs-btn-hover-bg: #f9f5f4;
+	--bs-btn-hover-border-color: #f9f5f4;
+	--bs-btn-focus-shadow-rgb: 49, 132, 253;
+	width: 160px;
+	height: 50px;
 }
 
 .btn-yellow {
-    --bs-btn-color: var(--bs-yellow);
-    --bs-btn-bg: 0;
-    --bs-btn-border-color: var(--bs-yellow);
-    --bs-btn-hover-color: var(--bs-secondary);
-    --bs-btn-hover-bg: var(--bs-yellow);
-    --bs-btn-hover-border-color: var(--bs-yellow);
-    --bs-btn-focus-shadow-rgb: 49, 132, 253;
-    width: 160px;
-    height: 50px;
+	--bs-btn-color: var(--bs-yellow);
+	--bs-btn-bg: 0;
+	--bs-btn-border-color: var(--bs-yellow);
+	--bs-btn-hover-color: var(--bs-secondary);
+	--bs-btn-hover-bg: var(--bs-yellow);
+	--bs-btn-hover-border-color: var(--bs-yellow);
+	--bs-btn-focus-shadow-rgb: 49, 132, 253;
+	width: 160px;
+	height: 50px;
 }
 
 .btn-danger {
-    background-color: var(--bs-red);
-    color: var(--bs-yellow);
+	background-color: var(--bs-red);
+	color: var(--bs-yellow);
+}
+
+.buttontext {
+	align-items: center;
+	justify-content: center;
 }
 
 .custom-footer {
-    background-color: var(--bs-secondary);
-    padding: 8vw 0;
+	background-color: var(--bs-secondary);
+	padding: 8vw 0;
 }
 
 .footer-icons {
-    padding-bottom: 40px;
+	padding-bottom: 40px;
 }
-
 
 /*---------------------------- ------------- ---------------------------------------------------------------------------------------------*/
 /*---------------------------- Breakpoint-md ---------------------------------------------------------------------------------------------*/
 /*---------------------------- ------------- ---------------------------------------------------------------------------------------------*/
 
 @media (min-width: 768px) {
+	/*----------------- Typography Desktop ------------------*/
+	h1 {
+		font-family: "Poppins";
+		font-style: normal;
+		font-weight: 700;
+		font-size: clamp(40px, 6.1vw, 100px);
+		line-height: 1.5;
+		color: var(--bs-text-light);
+	}
 
-    /*----------------- Typography Desktop ------------------*/
-    h1 {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 700;
-        font-size: clamp(45px, 6.1vw, 120px);
-        line-height: 1.5;
-        color: var(--bs-text-light);
-    }
+	h2 {
+		font-family: "Poppins";
+		font-style: normal;
+		font-weight: 700;
+		font-size: clamp(30px, 3.8vw, 50px);
+		line-height: 1.5;
+	}
 
-    h2 {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 700;
-        font-size: clamp(40px, 3.8vw, 60px);
-        line-height: 1.5;
-    }
+	.subtitle {
+		/*h2 serif*/
+		font-family: "Libre Bodoni";
+		font-style: normal;
+		font-weight: 700;
+		font-size: clamp(30px, 3.8vw, 50px);
+		line-height: 1.5;
+		color: var(--bs-yellow);
+	}
 
-    .subtitle {
-        /*h2 serif*/
-        font-family: 'Libre Bodoni';
-        font-style: normal;
-        font-weight: 700;
-        font-size: clamp(40px, 3.8vw, 60px);
-        line-height: 1.5;
-        color: var(--bs-yellow);
-    }
+	h3 {
+		font-family: "Poppins";
+		font-style: normal;
+		font-weight: 700;
+		font-size: clamp(20px, 2.3vw, 30px);
+		line-height: 1.5;
+	}
 
-    h3 {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 700;
-        font-size: clamp(25px, 2.3vw, 40px);
-        line-height: 1.5;
-    }
-
-    body {
-        font-family: 'Libre Bodoni';
-        font-style: normal;
-        font-weight: 400;
-        /* font-size: 1.5vw; */
-        font-size: clamp(16px, 1.5vw, 28px);
-        line-height: 1.5;
-    }
+	body {
+		font-family: "Libre Bodoni";
+		font-style: normal;
+		font-weight: 400;
+		font-size: clamp(14px, 1.5vw, 25px);
+		line-height: 1.5;
+	}
 }
 
 @media (min-width: 992px) {
-    .btn {
-        --bs-btn-font-size: 21px;
-    }
+	.btn {
+		--bs-btn-font-size: 20px;
+	}
 
-    .btn-primary {
-        width: 184px;
-        height: 60px;
-    }
+	.btn-primary {
+		width: 184px;
+		height: 60px;
+	}
 
-    .btn-secondary {
-        width: 184px;
-        height: 60px;
-    }
+	.btn-secondary {
+		width: 184px;
+		height: 60px;
+	}
 
-    .btn-yellow {
-        width: 184px;
-        height: 60px;
-    }
+	.btn-yellow {
+		width: 184px;
+		height: 60px;
+	}
 }
 
 @media (min-width: 1600px) {
-    .container {
-        max-width: 1920px;
-    }
+	.container {
+		max-width: 1920px;
+	}
 }
