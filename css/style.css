@@ -31,7 +31,7 @@
 }
 
 .navbar-toggler-icon {
-	background-image: url("imgs/Icons/hamburgerMenu.svg");
+	background-image: url(../imgs/Icons/hamburgerMenu.svg);
 }
 
 #activeMenu {
@@ -41,7 +41,7 @@
 /*----------------- HOME ------------------*/
 
 .headerRe {
-	background-image: url("imgs/HomePage/HeaderHomeMobile.png");
+	background-image: url(../imgs/HomePage/HeaderHomeMobile.png);
 	background-size: cover;
 	height: 89.7vw;
 }
@@ -65,7 +65,7 @@
 
 /*----------------- APP ------------------*/
 .headerApp {
-	background-image: url("imgs/App/HeaderAppMobile.png");
+	background-image: url(../imgs/App/HeaderAppMobile.png);
 	background-size: cover;
 	height: 89.7vw;
 }
@@ -77,19 +77,19 @@
 }
 
 .borderTopApp {
-	background-image: url(imgs/App/BorderTopMob.png);
+	background-image: url(../imgs/App/BorderTopMob.png);
 	height: 20vw;
 	background-size: cover;
 }
 
 .borderBottomApp {
-	background-image: url(imgs/App/BorderBottomMobpng.png);
+	background-image: url(../imgs/App/BorderBottomMobpng.png);
 	height: 27vw;
 	background-size: cover;
 }
 
 .bg-privati {
-	background-image: url(imgs/App/backgroundAppPrivatiMobile.png);
+	background-image: url(../imgs/App/backgroundAppPrivatiMobile.png);
 	background-size: cover;
 }
 
@@ -107,7 +107,7 @@
 /*----------------- COMMUNITY ------------------*/
 
 .headerCom {
-	background-image: url("imgs/Community/HeaderComMobile.png");
+	background-image: url(../imgs/Community/HeaderComMobile.png);
 	background-size: cover;
 	height: 96.9vw;
 }
@@ -144,7 +144,7 @@
 /*----------------- ABOUT US ------------------*/
 
 .headerAboutus {
-	background-image: url("imgs/Aboutus/HeaderAboutusMobile.png");
+	background-image: url(../imgs/Aboutus/HeaderAboutusMobile.png);
 	background-size: cover;
 	height: 89.7vw;
 }
@@ -154,7 +154,7 @@
 }
 
 .ribbon {
-	background-image: url(imgs/Aboutus/ribbon.svg);
+	background-image: url(../imgs/Aboutus/ribbon.svg);
 	height: 33vw;
 	background-size: cover;
 	margin-right: 0;
@@ -205,7 +205,7 @@ span.swiper-pagination-bullet:nth-child(6) {
 
 /*--------------------------MISSION-------------------------- */
 .headerMission {
-	background-image: url("imgs/Mission/HeaderMission.png");
+	background-image: url(../imgs/Mission/HeaderMission.png);
 	background-size: cover;
 	height: 62.5vw;
 }
@@ -242,7 +242,7 @@ span.swiper-pagination-bullet:nth-child(6) {
 /*----------------------EVENTS---------------------------*/
 
 .headerEvents {
-	background-image: url("imgs/Events/HeaderEventsMobile.png");
+	background-image: url(../imgs/Events/HeaderEventsMobile.png);
 	background-size: cover;
 	height: 89.7vw;
 }
@@ -300,19 +300,19 @@ span.swiper-pagination-bullet:nth-child(6) {
 
 /*------------------SINGLE EVENT---------------------------*/
 .headerSwapping {
-	background-image: url("imgs/SingleEvents/HeaderSwapping.png");
+	background-image: url(../imgs/SingleEvents/HeaderSwapping.png);
 	background-size: cover;
 	height: 89.7vw;
 }
 
 .headerWorkshop {
-	background-image: url("imgs/SingleEvents/HeaderWorkshop.png");
+	background-image: url(../imgs/SingleEvents/HeaderWorkshop.png);
 	background-size: cover;
 	height: 89.7vw;
 }
 
 .headerParty {
-	background-image: url("imgs/SingleEvents/HeaderParty.png");
+	background-image: url(../imgs/SingleEvents/HeaderParty.png);
 	background-size: cover;
 	height: 89.7vw;
 }
@@ -393,7 +393,7 @@ span.swiper-pagination-bullet:nth-child(6) {
 		margin: auto;
 	}
 	.headerRe {
-		background-image: url("imgs/HomePage/HeaderHomeDesktop.png");
+		background-image: url(../imgs/HomePage/HeaderHomeDesktop.png);
 		background-size: contain;
 		height: 63.3vw;
 	}
@@ -424,7 +424,7 @@ span.swiper-pagination-bullet:nth-child(6) {
 	/*----------------- APP ------------------*/
 
 	.headerApp {
-		background-image: url("imgs/App/HeaderAppDesktop2.png");
+		background-image: url(../imgs/App/HeaderAppDesktop2.png);
 		background-size: cover;
 		height: 61vw;
 	}
@@ -436,13 +436,13 @@ span.swiper-pagination-bullet:nth-child(6) {
 	}
 
 	.borderTopApp {
-		background-image: url(imgs/App/GreenBorderTop.png);
+		background-image: url(../imgs/App/GreenBorderTop.png);
 		height: 20vw;
 		background-size: cover;
 	}
 
 	.borderBottomApp {
-		background-image: url(imgs/App/BorderBottom.png);
+		background-image: url(../imgs/App/BorderBottom.png);
 		height: 27vw;
 		background-size: cover;
 	}
@@ -450,7 +450,7 @@ span.swiper-pagination-bullet:nth-child(6) {
 	/*----------------- COMMUNITY ------------------*/
 
 	.headerCom {
-		background-image: url("imgs/Community/HeaderComDesktop.png");
+		background-image: url(../imgs/Community/HeaderComDesktop.png);
 		background-size: cover;
 
 		height: 50vw;
@@ -465,7 +465,7 @@ span.swiper-pagination-bullet:nth-child(6) {
 	/*----------------- ABOUTUS ------------------*/
 
 	.headerAboutus {
-		background-image: url("imgs/Aboutus/HeaderAboutusDesktop.png");
+		background-image: url(../imgs/Aboutus/HeaderAboutusDesktop.png);
 		background-size: cover;
 		height: 62.5vw;
 	}
@@ -475,13 +475,13 @@ span.swiper-pagination-bullet:nth-child(6) {
 	}
 
 	.borderTopApp {
-		background-image: url(imgs/App/GreenBorderTop.png);
+		background-image: url(../imgs/App/GreenBorderTop.png);
 		height: 20vw;
 		background-size: cover;
 	}
 
 	.borderBottomApp {
-		background-image: url(imgs/App/BorderBottom.png);
+		background-image: url(../imgs/App/BorderBottom.png);
 		height: 27vw;
 		background-size: cover;
 	}
@@ -549,7 +549,7 @@ span.swiper-pagination-bullet:nth-child(6) {
 	}
 
 	.headerEvents {
-		background-image: url("imgs/Events/HeaderEventsDesktop.png");
+		background-image: url(../imgs/Events/HeaderEventsDesktop.png);
 		background-size: cover;
 		height: 62.5vw;
 	}
